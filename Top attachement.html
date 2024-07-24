@@ -9,12 +9,12 @@
 	
 		:root{
 			--green:#101111fc;
-    --dark-color:#3fcf1e;
-    --black:#444;
-    --light-color:#666;
-    --border:.1rem solid rgba(0,0,0,.1);
-    --border-hover:.1rem solid var(--black);
-    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+			--dark-color:rgb(33, 145, 80)35
+			--black:#444;
+			--light-color:#666;
+			--border:.1rem solid rgba(0,0,0,.1);
+			--border-hover:.1rem solid var(--black);
+			--box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 		}
 		
 		*{
@@ -152,7 +152,8 @@
 			border:var(--border);
 		}
 		
-		.btn{
+		
+.btn{
   margin-top: 1rem;
   display:inline-block;
   padding:.9rem 3rem;
@@ -164,6 +165,7 @@
   cursor: pointer;
   font-weight: 500;
 }
+
 		
 		.btn:hover{
 			background:var(--dark-color);
@@ -179,7 +181,7 @@
 		
 		.navbar {
 			overflow: hidden;
-			background: #4CAF50;
+			background: #101111fc;
 		}
 		.navbar a {
 			float: left;
@@ -209,7 +211,7 @@
 		.header .header-0 .logo{
 			align-items:start;
 			justify-content:space-between;
-			font-size: 2.5px;
+			font-size: 2.5rem;
 			font-weight: bolder;
 			color:var(--black);
 		}
@@ -217,7 +219,6 @@
 		.header .header-0 .logo a{
 			align-items:start;
 			justify-content:left;
-			font-size: 1rem;
 			color:var(--green);
 		}
 		
@@ -413,7 +414,7 @@
 		.home{
 			width: 100%;
 			height: 110vh;
-			background: url(img/about1.jpg)no-repeat;
+			background: url(img/9.jpg)no-repeat;
 			background-size: cover;
 			opacity:222222;
 			
@@ -449,7 +450,7 @@
 		}
 		
 		.home .row .content h3{
-			color:#0a0a0a;
+			color:#101111fc;
 		   
 			font-size: 6.2rem;
 			font-weight:bolder;
@@ -458,22 +459,22 @@
 		}
 		
 		.home .row .content p{
-			color:#101111fc;
+			color:#0e0000;
 			background-attachment: var(--box-shadow);
-			font-size: 2.4rem;
-			font-weight:400;
+			font-size: 2.8rem;
+			font-weight: bolder;
 			font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 			padding:2rem 0;
 		}
 		
 		.Hcard {
-		   background-color:#ffffff90;
+		   background-color:#abb3ab70;
 			border-radius: 110px;
-			box-shadow: 0px 5px 15px rgba(12, 12, 12, 0.118);
+			box-shadow: 0px 5px 15px rgba(12, 12, 12, 0.2);
 			justify-content: space-around; /* Adjust the spacing between cards */
 			margin: 2px;
-			max-width: 800px;
-			padding: 30px;
+			max-width: 430px;
+			padding: 50px;
 			text-align:center;
 			transition: transform 0.2s ease-in-out;
 		}
@@ -512,22 +513,22 @@
 			border-radius: 5px;
 			transition: all 0.3s ease;
 		  }
-  .nav-links li a:hover{
-    background: #3a3b3c50;
-  }
-  .nav-links .mobile-item{
-    display: none;
-  }
-  .nav-links .drop-menu{
-    position: absolute;
-    background: #242526cd;
-    width: 180px;
-    line-height: 45px;
-    top: 85px;
-    opacity: 0;
-    visibility: hidden;
-    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-  }
+		  .nav-links li a:hover{
+			background: #3a3b3c50;
+		  }
+		  .nav-links .mobile-item{
+			display: none;
+		  }
+		  .nav-links .drop-menu{
+			position: absolute;
+			background: #24242577;
+			width: 180px;
+			line-height: 45px;
+			top: 85px;
+			opacity: 0;
+			visibility: hidden;
+			box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+		  }
 		  .nav-links li:hover .drop-menu,
 		  .nav-links li:hover .mega-box{
 			transition: all 0.3s ease;
@@ -552,7 +553,7 @@
 			visibility: hidden;
 		  }
 		  .mega-box .content{
-			background: #242624cd;
+			background: #242526cd;
 			padding: 25px 20px;
 			display: flex;
 			width: 100%;
@@ -737,7 +738,36 @@
 			color:#fff;
 		}
 		
+		.newsletter{
+			background:url(images/mainbg.jpeg) no-repeat;
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
 		
+		.newsletter form{
+			max-width: 45rem;
+			margin-left: auto;
+			text-align: center;
+			padding:5rem 0;
+		}
+		
+		.newsletter form h3{
+			font-size: 2.2rem;
+			color:#fff;
+			padding-bottom: .7rem;
+			font-weight: normal;
+		}
+		
+		.newsletter form .box{
+			width: 100%;
+			margin: .7rem 0;
+			padding:1rem 1.2rem;
+			font-size: 1.6rem;
+			color:var(--black);
+			border-radius: .5rem;
+			text-transform: none;
+		}
 		
 		.arrivals .arrivals-slider .box{
 			display: flex;
@@ -882,7 +912,7 @@
 		}
 		
 		.footer .box-container .box h3{
-			font-size: 2.2px;
+			font-size: 2.2rem;
 			color:var(--black);
 			padding:1rem 0;
 		}
@@ -957,9 +987,8 @@
 			display: none;
 		}
 		
-		.loader-container video{
-			height:50rem;
-			width: 100rem;
+		.loader-container img{
+			height:10rem;
 		}
 		
 		
@@ -1061,7 +1090,7 @@
 		}
 	</style>
 
-    <title>About Us</title>
+    <title>Top Attachments</title>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
@@ -1073,7 +1102,6 @@
 </head>
 <body>
     
-   
    
 <!-- header section starts  -->
 
@@ -1223,6 +1251,7 @@
 
 <!-- header section ends -->
 
+
 <!-- bottom navbar  -->
 
 <nav class="bottom-navbar">
@@ -1265,14 +1294,13 @@
         
         <div class="Hcard">
         <div class="content">
-        <h3>Your partner in
-			packaging solutions</h3>
+        <h3>Top Attachments</h3>
                 
                  
-            <p>A privately owned company that has been trading since its establishment in 1999. Our core business is the importation and supply of Flexible Intermediate Bulk Containers (FIBC’s), otherwise known as bulk bags, tote bags or tay bags.
-
-also supply products to customers in agricultural, chemical, recycling, waste management, building and many more business sectors.</p>
-            <a href="index.html" class="btn">Explore</a>
+            <p>Your packaging partner committed to supplying 
+              
+                 you with the best</p>
+            <a href="#" class="btn">Explore</a>
         </div>
         </div>
      </div>   
@@ -1281,18 +1309,89 @@ also supply products to customers in agricultural, chemical, recycling, waste ma
 
 <!-- home section end -->
 
+
 <section class="deal">
 
     <div class="content">
        
-        <h1>Welcome To Conbag</h1>
-		
+        <h1>Conbag International Packaging</h1>
+		<h3>
+			Top Attachments</h3>
         <p>
-			Conbag Has All The Experience From Conbag., Who Have Been Successfully Supplying A Comprehensive Range Of FIBC’s (Flexible Intermediate Bulk Containers), Also Known As Bulk Bags To Many Different Sectors Across The UK, For Over 4 Years And More Recently In Europe And Other Countries Worldwide. Our Teams Are Dedicated To Supplying You With The Best Packaging Solution For Your Business. Along With Bulk Bags We Also Supply Many Other Products Such As; Woven Polypropylene Sacks, Sandbags, Garden Waste/Kerbside Collection Bags, Polythene Bags, Liners And Many More. We Hold Stocks In Our Irish Warehouses For Both Immediate Delivery,
-			 And Also Those Products That Have Been Manufactured To Specific Requirements For Our Existing Customers That We Have Contracted With Them To Stock On Their Behalf.</p>
+			Conbag International Packaging Is Committed To Safety And Compliance, Top Attachments Bulk Bags, Also Known As FIBCs (Flexible Intermediate Bulk Containers), Are Used For Storing And Transporting A Wide Variety Of Materials, Including Grains, Chemicals, And Construction Materials. The Top Attachment Of These Bags Is Designed For Easy Filling And Can Vary Depending On The Application. Here Are The Common Types Of Top Attachments For Bulk Bags</p>
         <a href="index.html" class="btn">More About Us</a>
     </div>
 </section>
+
+
+<!-- deal section starts  -->
+
+<section class="deal">
+
+   
+    <div class="content">
+        <h1>
+			Key Features</h1>
+       
+        <p>• Material Compatibility: The Construction Material Of The Bulk Bag And Its Top Attachment Should Be Compatible With The Contents It Will Hold. This Includes Considerations For Chemical Resistance, Food-Grade Quality For Edibles, And Durability For Heavy Or Abrasive Materials.
+			<br>• Ease Of Filling: The Design Of The Top Attachment Greatly Influences How Easily The Bag Can Be Filled. Features Like Spout Tops Or Skirts Can Facilitate Easier And More Controlled Filling, Especially For Powdery Or Granular Materials.
+			<br>• Closure Mechanism: The Type Of Closure (E.G., Tie Strings For Skirt Tops, Ties Or Velcro For Flap Tops) Affects The Bag’s Sealing Efficiency. A Proper Closure Mechanism Is Essential For Preventing Contamination And Spillage.
+			<br>• Protection Against Contamination: Flap Tops And Skirts Provide An Additional Layer Of Protection Against Dust, Moisture, And Other Contaminants, Which Is Crucial For Sensitive Materials.
+			<br>• Regulatory Compliance: Bulk Bags Used For Certain Materials, Like Food Or Pharmaceuticals, Need To Comply With Specific Regulatory Standards Regarding Safety And Hygiene.
+			<br>• Environmental Considerations: Reusability And Recyclability Of The Bags And Their Components Are Important For Environmentally Conscious Operations.
+			Safety Features: Especially In Hazardous Material Handling, Features Like Antistatic Properties Or UV Protection Can Be Crucial For Safety.
+       
+    </div>
+
+    <div class="image">
+        <img src="img/8.jpg" alt="">
+    </div>
+</section>
+
+<!-- deal section ends -->
+
+<!-- deal section starts  -->
+
+<section class="deal">
+	<div class="image">
+        <img src="img/top attach1.jpg" alt="">
+    </div>
+   
+    <div class="content">
+        <h1>
+			Advantages</h1>
+       
+        <p>• Versatility: Bulk Bags With Different Top Attachments Like Skirts, Spouts, Flaps, Or Open Tops Can Be Tailored To Meet Specific Filling And Handling Requirements, Making Them Versatile For A Wide Range Of Applications..
+			<br>• Efficiency In Filling And Discharging: Top Attachments Like Spout Tops Allow For Controlled, Precise Filling And Discharging, Reducing Spillage And Waste. This Enhances Operational Efficiency, Particularly In Industrial Settings.
+			<br>• Protection Of Contents: Features Like Flap Tops And Skirts Provide An Extra Layer Of Protection Against External Contaminants, Moisture, And Dust, Ensuring The Integrity Of The Contents, Which Is Especially Important For Sensitive Materials Like Food Products Or Chemicals.
+			<br>• Ease Of Handling And Transportation: Bulk Bags Are Designed For Easy Handling, Often With Loops Or Handles. This Facilitates Efficient Loading, Unloading, And Transportation, Saving Time And Labour Costs.
+			<br>• Space Saving: When Not In Use, Bulk Bags Can Be Collapsed Or Folded, Saving Valuable Storage Space. This Is A Significant Advantage Over Rigid Containers.
+			
+			<br>• With Conbag International Packaging’s Top Attachments, Bulk Bags Can Be Manufactured To Comply With Industry-Specific Regulations, Such As Food Safety Standards Or Hazardous Material Handling Requirements, Ensuring Legal Compliance.
+    </div>
+
+</section>
+
+<!-- deal section ends -->
+
+<!-- newsletter section starts -->
+
+<section class="newsletter">
+
+    <form action="">
+        <h3>subscribe for latest updates</h3>
+        <input type="email" name="" placeholder="enter your email" id="" class="box">
+        <input type="submit" value="subscribe" class="btn">
+        
+        <!--featured section ends-->
+    </form>
+
+</section>
+
+<!-- newsletter section ends -->
+
+
+
 
 
 <!-- reviews section starts  -->
@@ -1310,9 +1409,8 @@ also supply products to customers in agricultural, chemical, recycling, waste ma
                 <i class="fas fa-hotel"></i>
                 <div class="card-body">
                 <h3>manufacturing</h3>
-                <p> Conabag international packaging utilise a number of manufacturing facilities in India. 
-                    Each of which holds a valid certificate for the manufacture of bulk bags From ConBags of Packaging.</p>
-               
+                <p>Conbag International Packaging utilise a number of manufacturing facilities in India. Each of which holds a
+                     valid certificate for the manufacture of bulk bags from the Indian Institute of Packaging..</p>
                
             </div>
 
@@ -1323,9 +1421,9 @@ also supply products to customers in agricultural, chemical, recycling, waste ma
                 <div class="card">
                     <i class="fas fa-cubes"></i>
                     <div class="card-body">
-                <h3>Sales & Distribution</h3>
-                <p> Conabag international packaging operates from offices in Berkeley, Gloucestershire and Indore, 
-					India and distributes from warehousing facilities based in Worcestershire and Staffordshire, United Kingdom</p>
+                <h3>Distribution</h3>
+                <p>Conbag International Packaging operates from warehousing facilities based in Co.
+                     Meath, Republic of Europe.It involves activities such as transportation, warehousing, logistics, and retailing.</p>
                 </div>
 
             </div>
@@ -1336,17 +1434,29 @@ also supply products to customers in agricultural, chemical, recycling, waste ma
                     <i class="fas fa-handshake"></i>
                     <div class="card-body">
                 <h3>Partner Company</h3>
-                <p> Conabag international packaging works closely with its freight forward companies to help maintain an
-					 excellent delivery service which allows us offer deliveries across the world.</p>
-				
+                <p>Conbag International Packaging works closely with its freight forward companies to help maintain an excellent delivery service which allows us to offer deliveries across the Europe.</p>
                 </div>
 
             </div>
             </div>
-			</div>
-			</div>
-		
             
+                </div>
+
+            </div>
+            </div>
+
+            
+                </div>
+
+            </div>
+            </div>
+
+            
+            </div>
+
+        </div>
+
+    </div>
     
 </section>
 
@@ -1359,27 +1469,22 @@ also supply products to customers in agricultural, chemical, recycling, waste ma
 <section class="deal">
 
     <div class="content">
-       <h1>What Conbag can do for you....</h1>
-	   
-        <p>1. Consistently supply a fully certified quality product.
-			<br>2. Offer a competitive price.
-			<br>3. Offer a complete inventory management system for all your FIBC requirements.
-			<br>4. Hold 6 months of your required stock in our UK
-			warehouses; reducing lead times and helping with
-			your cash flow.
-			
-			<br>5. Allocate a trained Member of our team to look after all your requirements.</p>
+       <h1>It's Application</h1>
+	   <h3>Bulk Bags, With Their Various Top Attachments Like Skirts, Flaps, Spouts, Or Open Tops, Find Applications Across A Diverse Range Of Industries. Their Versatility And Durability Make Them Ideal For Handling, Storing, And Transporting A Wide Array Of Materials. Here Are Some Of The Key Applications:</h3>
+        <p>• Used For Storing And Transporting Grains, Seeds, Feeds, Fertilizers.
+			<br>• Ideal For Handling Both Powdered And Granular Chemical Products.
+			<br>• Used For Transporting Sand, Gravel, Cement, And Other Construction Materials.
+			<br>• Suitable For Transporting Bulk Food Items Like Sugar, Flour, Salt, And Spices.</p>
        
     </div>
 
     <div class="image">
-        <img src="img/lifestyle-ecofriendly-people (1).jpg" alt="">
+        <img src="img/indus 2.jpg" alt="">
     </div>
 
 </section>
 
 <!-- deal section ends -->
-
 
 <!-- footer section starts  -->
 
@@ -1399,7 +1504,7 @@ also supply products to customers in agricultural, chemical, recycling, waste ma
 			<h3>ABOUT</h3>
 			<a href="index.html"> <i class="fas fa-arrow-right"></i>Home</a>
 			<a href="about.html"> <i class="fas fa-arrow-right"></i>About</a>
-			<a href="services.html"> <i class="fas fa-arrow-right"></i>Services</a>
+			<a href="SERVICES (2).html"> <i class="fas fa-arrow-right"></i>Services</a>
 			<a href="contact us.html"> <i class="fas fa-arrow-right"></i>Contact</a>
 		</div>
   
@@ -1439,13 +1544,13 @@ also supply products to customers in agricultural, chemical, recycling, waste ma
   </section>
   
   <!-- footer section ends -->
-  
-  
-  
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  
-  <!-- custom js file link  -->
-  <script src="main.js/script.js"></script>
-  
-  </body>
-  </html>
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="main.js/script.js"></script>
+
+</body>
+</html>

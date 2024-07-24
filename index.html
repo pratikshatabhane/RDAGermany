@@ -1,274 +1,1058 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>RDA ConBags Germany</title>
-  </head>
-  <body>
-    <header class="header">
-      <nav>
-        <div class="nav__bar">
-          <div class="logo">
-            <a href=""><img src="assets/conbag-header.png" alt="logo" /></a>
-          </div>
-          <div class="nav__menu__btn" id="menu-btn">
-            <i class="ri-menu-line"></i>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conbags Packaging</title>
+    <link rel="shortcut icon" type="image" href="./img/conlogo.ico">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div class="header-0">
+       
+      <a href="index.html" class="logo"><img src="images/conbag-header.png" alt=""; height="90"; width="280"></a>
+     
+      <div class="header-1">
+            <a href="https://www.conbag.de/"  class="btn"><i class="fa fa-shopping-basket" aria-hidden="true">OnlineShop</i></a>
+         
+         
+
+        <div class="icons">
+            <div id="search-btn" class="fas"></div>
+
+            <div id="login-btn" class="fas fa-user"></div>
+           
+        </div>
+        </div>
+           
+           
         </div>
         
-        <ul class="nav__links" id="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="Service.html">Services</a></li>
-          <li><a href="Explore.html">Explore</a></li>
-          <li><a href="Explore.html">All Products</a></li>
-          <li><a href="Industries.html">Industries</a></li>
-          <li><a href="Conatact.html">Contact</a></li>
-        </ul>
-        <button class="btn nav__btn">Log In</button>
-      </nav>
-      <div class="section__container header__container" id="home">
-        <p>Your packaging partner committed to supplying you with the best</p>
-        <h1>ConBag International <span>Simple Smart Packaging</span>.</h1>
-      </div>
-    </header>
-    <br>
-    <br>
-    <br>
-     <section class="section__container booking__container">
-      <form action="/" class="booking__form">
-        <div class="input__group">
-          <span><i class="ri-shield-star-line"></i></span>
-          <div>
-            <label for="check-in">MISSION</label>
-            <input type="text" placeholder=" Best possible solution" />
-          </div>
-        </div>
-        <div class="input__group">
-          <span><i class="ri-map-2-line"></i></span>
-          <div>
-            <label for="check-out">VISION</label>
-            <input type="text" placeholder="Supply reliable products" />
-          </div>
-        </div>
-
-        <div class="input__group">
-          <span><i class="ri-user-fill"></i></span>
-          <div>
-            <label for="guest">NETWORK</label>
-            <input type="text" placeholder=" Based on integrity " />
-          </div>
-        </div>
-        <div class="input__group input__btn">
-          <button class="btn">EXPLORE</button>
-        </div>
-      </form>
-    </section>
-   <section class="section__container about__container" id="about">
-      <div class="about__image">
-        <img src="assets/A4.jpg" alt="about" />
-      </div>
-      <div class="about__content">
-        <p class="section__subheader">ABOUT US</p>
-        <h2 class="section__header">Welcome to RDA Bulk Packaging Germany Ltd.</h2>
-        <p class="section__description">
-          RDA Bulk Packaging Ireland Ltd. has all the experience from RDA Bulk Packaging Ltd.,
-           who have been successfully supplying a comprehensive range of FIBC’s (Flexible Intermediate Bulk Containers),
-            also known as Bulk Bags to many different sectors across the UK, for over 24 years and more recently in Europe and other 
-            countries worldwide. Our teams are dedicated to supplying you with the best packaging solution for your business.
-
-            Along with Bulk bags we also supply many other products such as; woven polypropylene sacks, sandbags,
-             garden waste/kerbside collection bags, polythene bags, liners and many more. We hold stocks in our Irish warehouses 
-             for both immediate delivery, and also those products that have been manufactured to specific requirements for our
-              existing customers that we have contracted with them to stock on their behalf.
-        </p>
-        <div class="about__btn">
-          <button class="btn">Read More</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="section__container room__container">
-      <p class="section__subheader">What RDA can do for you...</p>
-      <h2 class="section__header">We pride ourselves on offering competitive prices,<br>quality products and extraordinary customer care.</h2>
-      <div class="room__grid">
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/p2.jpg" alt="room" />
-            <div class="room__card__icons">
-              <span><i class="ri-heart-fill"></i></span>
-              <span><i class="ri-paint-fill"></i></span>
-              <span><i class="ri-shield-star-line"></i></span>
-            </div>
-          </div>
-          <div class="room__card__details">
-            <h4>Competitive Price</h4>
-            <p>
-              Offer a competitive price with your requirements.
-            </p>
-        
-            <button class="btn">Read More</button>
-          </div>
-        </div>
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/pquality.png" alt="room" />
-            <div class="room__card__icons">
-              <span><i class="ri-heart-fill"></i></span>
-              <span><i class="ri-paint-fill"></i></span>
-              <span><i class="ri-shield-star-line"></i></span>
-            </div>
-          </div>
-          <div class="room__card__details">
-            <h4>Quality Products</h4>
-            <p>
-              Reducing lead times and helping with your cash flow.
-            </p>
-           
-            <button class="btn">Read More</button>
-          </div>
-        </div>
-
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/part1.jpeg" alt="room" />
-            <div class="room__card__icons">
-              <span><i class="ri-heart-fill"></i></span>
-              <span><i class="ri-paint-fill"></i></span>
-              <span><i class="ri-shield-star-line"></i></span>
-            </div>
-          </div>
-          <div class="room__card__details">
-            <h4>Your Stock With Us</h4>
-            <p>
-              Hold 6 months of your required stock in our Germany warehouses;to helping with your cash flow.
-            </p>
-           
-            <button class="btn">Read More</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="service" id="service">
-      <div class="section__container service__container">
-        <div class="service__content">
-          <p class="section__subheader">Many of our stock products are available to order on our online shop 24/7 so you 
-            <br>can order at a time convenient for you.</p>
-          <h2 class="section__header">SERVICES</h2>
-          <ul class="service__list">
+    </div>
+    
+</div>
+   <div class="header-2">
+        <nav>
+        <div class="wrapper">
+         
+          
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="index.html">Home</a></li>
             <li>
-              <span><i class="ri-shield-star-line"></i></span>
-              MANUFACTURING
-            </li>
+                <a href="about.html" class="desktop-item">About</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+               
+             <ul class="drop-menu">
+                          
+                          <li><a href="SERVICES (2).html">Services</a></li>
+                          <li><a href="RPP.html">100% RPP</a></li>
+                          <li><a href="sustainability.html">Sustainability</a></li>
+                          <li><a href="circular.html">Circular Economy</a></li>
+                        </ul>
+                   
+              </li>
+            
+            
+           <li>
             <li>
-              <span><i class="ri-24-hours-line"></i></span>
-              DISTRIBUTION
-            </li>
-            <li>
-              <span><i class="ri-shield-star-line"></i></span>
-              PARTNER COMPANY
-            </li>
-            <li>
-              <span><i class="ri-headphone-line"></i></span>
-              AROUND THE WORLD
-            </li>
-            <li>
-              <span><i class="ri-map-2-line"></i></span>
-              R AND D
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section__container banner__container">
-      <div class="banner__content">
-        <div class="banner__card">
-          <h4>5575+</h4>
-          <p>Quality Bags Available</p>
-        </div>
-        <div class="banner__card">
-          <h4>350+</h4>
-          <p>Orders is Completed</p>
-        </div>
-        <div class="banner__card">
-          <h4>600+</h4>
-          <p>Our Happy Customers</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="explore" id="explore">
-      <p class="section__subheader">EXPLORE</p>
-      <h2 class="section__header">Your partner in packaging solutions.</h2>
-      <div class="explore__bg">
-        <div class="explore__content">
-          <p class="section__description">10th Aug 2024</p>
-          <h4>A New Discount Is Available In Our Bulk Bags.</h4>
-          <button class="btn">Continue</button>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer" id="contact">
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <div class="logo">
-            <a href="#home"><img src="assets/conbag-header.png" alt="logo" /></a>
-          </div>
-          <p class="section__description">
-            We have 24+ years of experience in supplying FIBCs Bulk Bags.
-          </p>
-          <button class="btn">Book Now</button>
-        </div>
-        <div class="footer__col">
-          <h4>QUICK LINKS</h4>
-          <ul class="footer__links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Conact US</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>OUR SERVICES</h4>
-          <ul class="footer__links">
-            <li><a href="#"> Privacy Policy</a></li>
-            <li><a href="#">Cookie Policy</a></li>
+              <a href="Industries.html" class="desktop-item">Industries</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Mega Menu</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <img src="img/all indus.png" alt="">
+                  </div>
+                  <div class="row">
+                  
+                    <ul class="mega-links">
+                      <li><a href="food grade bags.html">Food Industry</a></li>
+                      <li><a href="Feed Grade.html">Animal Feed Industry</a></li>
+                      <li><a href="Skip Industry.html">Skip Industry</a></li>
+                      <li><a href="Pharma industry.html">Pharma Industry</a></li>
+                      <li><a href="Roofing Underlay.html">Roofing Underlay</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    
+                    <ul class="mega-links">
+                        <li><a href="Chemical.html">Chemical Industry</a></li>
+                        <li><a href="rindustry.html">Plastic Recycling Industry</a></li>
+                        <li><a href="land industry.html"> Earth & Sand Industry</a></li>
+                        <li><a href="Agriculture.html">Agriculture & seeds</a></li>
+                        <li><a href="Mineral wolle.html">Mineral Wolle</a></li>
+                     
+                    </ul>
+                  </div>
+                  <div class="row">
+                   <ul class="mega-links">
+                      <li><a href="Mining and Quarrying.html">Mining and Underground</a></li>
+                      <li><a href="Building & Construction.html">Building and Construction</a></li>
+                      <li><a href="Forestry and Timber.html">Forestry and woodpellets</a></li>
+                      <li><a href="Ceramics & Glass.html">Ceramics & Glasses</a></li>
+                      <li><a href="Industries.html">And Many More..</a></li>
+                    </ul>
+                  </div>
+                  </div>
+              </div>
+              </li>
+              <li>
+              <a href="All Products page.html" class="desktop-item">All Products</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Mega Menu</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <img src="img/about1.jpg" alt="">
+                  </div>
+                  <div class="row">
+                    <header>BULK BAGS</header>
+                    <ul class="mega-links">
+                      <li><a href="Standard bulk bags.html">STANDARD BULK BAG</a></li>
+                      <li><a href="Fertilizer bags.html">FERTILIZER BAGS</a></li>
+                      <li><a href="tunnel lift bulk bags.html">TUNNEL LIFT BULK BAGS</a></li>
+                      <li><a href="Top attachement.html">TOP ATTACHMENTS</a></li>
+                      <li><a href="bottom attachement.html">BOTTOM ATTACHMENTS</a></li>
+                      </ul>
+                  </div>
+                  <div class="row">
+                    <header>SPECIAL BULK BAGS</header>
+                    <ul class="mega-links">
+                      <li><a href="bags and baffle bags.html"> BAFFLE BAGS</a></li>
+                      <li><a href="type D bulk bags.html">TYPE D BAGS</a></li>
+                      <li><a href="type c bulk bags.html">TYPE C BAGS</a></li>
+                      <li><a href="Asbestos bags.html">ASBESTOS BAGS</a></li>
+                      <li><a href="Un approved bags.html">UN APPROVED BAGS</a></li>
+                </ul>
+                  </div>
+                  <div class="row">
+                    <header>SMALL BAGS/CONTAINERS</header>
+                    <ul class="mega-links">
+                        <li><a href="Containers Liners.html">CONTAINER LINERS</a></li>
+                      <li><a href="top hemmed bulk bags.html">PPWOVEN SACKS</a></li>
+                      <li><a href="Bopp Bulk Bags.html">BOPP BAGS</a></li>
+                      <li><a href="Borrow Bulk Bags.html">BARROW BAGS</a></li>
+                      <li><a href="mesh  Leno Bulk Bags.html"> LENO MESH BULK BAGS</a></li>
+                   </ul>
+                  </div>
+               </li>
+          
             <li><a href="#">Brochures</a></li>
-             <li><a href="#">Flayers & Email campaign.</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
           </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
-        <div class="footer__col">
-          <h4>CONTACT US</h4>
-          <ul class="footer__links">
-            <li><a href="#">Call: +44 (0) 1453 511222
-            </a></li>
-            <li><a href="#">Email: info@rdapackaging.com</a></li>
-          </ul>
-          <div class="footer__socials">
-            <a href="#"><img src="assets/facebook.png" alt="facebook" /></a>
-            <a href="#"><img src="assets/instagram.png" alt="instagram" /></a>
-            <a href="#"><img src="assets/youtube.png" alt="youtube" /></a>
-            <a href="#"><img src="assets/twitter.png" alt="twitter" /></a>
+      </nav>
+    </div>
+
+    
+</header>
+
+<!-- header section ends -->
+
+<!-- bottom navbar  -->
+
+<nav class="bottom-navbar">
+    <a href="index.html" class="fas fa-home"></a>
+    <a href="about.html" class="fas fa-list"></a>
+    <a href="services.html" class="fas fa-list"></a>
+    <a href="Shop page.html" class="fas fa-comments"></a>
+    <a href="contact us.html" class="fas fa-blog"></a>
+</nav>
+
+<!-- login form  -->
+
+<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="save.php" method="post">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <span>password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn">
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't have an account ? <a href="#">create one</a></p>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+
+<section class="home" id="home">
+
+    <div class="row">
+        
+        <div class="Hcard">
+        <div class="content">
+        <h3>ConBag International Simple Smart Packaging.</h3>
+         <p>Your packaging partner is committed
+           to supplying you with the best.</p>
+            <a href="Industries.html" class="btn">Explore</a>
+        </div>
+        </div>
+     </div>   
+
+</section>
+
+<section class="deal">
+
+    <div class="content">
+       
+       <h1>Welcome to Conbag International Packaging 
+        <br>GmbH & Co of Germany.</h1>
+        <p>Conbag International Packaging GmbH & Co of Germany. has, since 2020, successfully supplied a comprehensive range of FIBC’s (Flexible Intermediate Bulk Containers), 
+          also known as Bulk Bags, to a wide range of business customers across the UK and more recently in Europe and other countries
+           worldwide. Our dedicated teams in the UK and India are committed to supplying you with the best packing solution for your business.
+            Along with Bulk bags we also supply many other products such as; woven polypropylene sacks, sandbags, garden waste/kerbside 
+            collection bags, polythene bags, liners and many more. We hold large stocks in our UK warehouses for both immediate delivery,
+             and also those products that have been manufactured to specific requirements for our existing customers that we have contracted 
+             with them to stock on their behalf.</p>
+        <a href="about.html" class="btn">More About Us</a>
+    </div>
+</section>
+<!-- home section end -->
+<br>
+<br>
+<br>
+
+  <h2 class="section__header">Sustainable products for your business...</h2>
+ <div class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="image/2 Loop Bulk Bags.jpg" alt="FIBC"><p>FIBC</p></div>
+            <div class="slide"><img src="img/container1.jpg" alt="Container Liners"><p>Container Liners</p></div>
+            <div class="slide"><img src="img/easy box.jpg" alt="Easy Box"><p>Easy Box</p></div>
+            <div class="slide"><img src="img/Roofing Underlay.webp" alt="Roofing Underlay"><p>Roofing Underlay</p></div>
+            <div class="slide"><img src="img/Mineral Wolle1.jpg" alt="Roofing Underlay"><p>Mineral Wolle</p></div>
+            <!-- Repeat slides to ensure continuous sliding -->
+            <div class="slide"><img src="image/factory images 3.jpg" alt="FIBC"><p>FIBC</p></div>
+          
+            <div class="slide"><img src="img/easy box2.jpg" alt="Easy Box"><p>Easy Box</p></div>
+            <div class="slide"><img src="img/19334.jpg.555x555_q85.jpg" alt="Roofing Underlay"><p>Roofing Underlay</p></div>
+            <div class="slide"><img src="img/conatiner2.webp" alt="Container Liners"><p>Container Liners</p></div>
+            <div class="slide"><img src="img/Mineral Wolle2.avif" alt="Roofing Underlay"><p>Mineral Wolle</p></div>
+        </div>
+    </div>
+
+    <style>
+      .slider-container {
+          width: 110%;
+          overflow: hidden;
+          position: relative;
+          border: 1px solid #33f11a;
+          border-radius: 10px;
+          background-color: #fff;
+          box-shadow: 0 4px 8px rgba(13, 14, 13, 0.412);
+         
+      }
+      
+      .slider {
+          display: flex;
+          animation: slide 30s linear infinite;
+          text-align: end;
+        
+      }
+      
+      .slide {
+          min-width: 30%;
+          box-sizing: border-box;
+          padding: 20px;
+          text-align: center;
+      }
+      
+      .slide img {
+          width: 100%;
+          height: 320px;
+          border-radius: 10px;
+      }
+      
+      .slide p {
+          margin-top: 10px;
+          font-size: 34px;
+      }
+      
+      @keyframes slide {
+          0% {
+              transform: translateX(0);
+          }
+          100% {
+              transform: translateX(-100%);
+          }
+      }
+      </style>
+
+
+<section class="deal">
+
+  <div class="content">
+    <div class="image">
+      <img src="images/father-teaching-his-small-daughter-how-plant-flowers-plant-nursery.jpg" alt="">
+  </div>
+     <h1>Shaping a Greener Sustainability at Conbag International Packaging.</h1>
+      <p>At Conbag International Packaging GmbH & Co of Germany has, Est 2020, sustainability isn’t an afterthought; it’s woven into every fiber of our operations.
+         As a leader in innovative packaging solutions for over six decades, we understand the urgency of addressing environmental challenges. Our commitment to 
+         sustainability is a commitment to a better future.Also Conbag successfully supplied a comprehensive range of FIBCs (Flexible Intermediate Bulk Containers), 
+        also known as Bulk Bags, to a wide range of business customers across the UK and, more recently, in Europe and other 
+        countries worldwide. Our teams in the UK and India are dedicated to supplying you with the best packing solutions for your business.
+         Along with bulk bags, we also supply many other products, such as woven polypropylene sacks, sandbags, garden waste/curbside 
+         collection bags, polythene bags, liners, and many more. We hold large stocks in our UK warehouses for both immediate delivery
+          and those products that have been manufactured to specific requirements for our existing customers that we have contracted with 
+          them to stock on their behalf.</p>
+      <a href="#" class="btn">Read More</a>
+  </div>
+
+  
+
+</section>
+
+      <section class="intro">
+        <div class="section__container intro__container">
+          <div class="intro__cotent">
+          
+          
+          <div class="intro__video">
+            <video src="images/CO2 FINALL_1 (2).mp4" autoplay muted loop> </video>
           </div>
         </div>
+        
+        <h2>The Impact of the FPS Recycling Hub About CO2</h2>
+        <h2 class="section__header"></h2>
+        <p class="section__description" >
+          Owing to our Recycling Hub and this process, every year, 7 million FIBCs will not end up in landfills, incineration or
+           downcycling but will be recycled. To achieve a similar level of emission saving, 12,000 cars would need to remain unmoved,
+            and it would take around 1.4 million trees to capture this amount of CO2 per year.
+        </p>
+        <br>
+        <button class="btn">Find More About Conbag</button>
       </div>
-      <div class="footer__bar">
-        Copyright © 2024 RDA Bulk Packaging Private Limited. All rights reserved.
-      </div>
-    </footer>
+      </section>
+  
+      
+      <section class="room__container" id="room">
+        <p class="section__subheader">...Our Solutions</p>
+        <h2 class="section__header">What Conbag can do for you...</h2>
+        <div class="room__grid">
+          <div class="room__card">
+            <img src="image/partner com.jpg" alt="room" height="284" width="1024"/>
+            <div class="room__card__details">
+             
+              <div>
+                <h3>Competitive Price</h3>
+                <p>Offer a competitive price with your requirements.</p>
+              </div>
+             
+            </div>
+          </div>
+          <div class="room__card">
+            <img src="images/back.png" alt="room" height="284" width="1024"/>
+            <div class="room__card__details">
+              <div>
+                <h3>Your Stock With Us </h3>
+                <p> reducing lead times and helping with your cash flow.</p>
+              </div>
+             
+            </div>
+          </div>
+          <div class="room__card">
+            <img src="images/Extrusion-Machine-1.jpg" alt="room" height="284" width="1024" />
+            <div class="room__card__details">
+              <div>
+                <h3>Inventory Management System</h3>
+                <p>
+                    Offer a complete inventory management system 
+                </p>
+              </div>
+            
+            </div>
+          </div>
+      
+      </section>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
-  </body>
+ <style>
+ 
+
+/* Header section */
+
+
+
+a.active{
+    background: #fff;
+    border-radius: 2px;
+}
+
+a:hover{
+    background: #fff;
+    border-radius: 2px;
+}
+
+/* Header section */
+
+
+
+/* carousel */
+
+.carousel{
+    width: 100vw;
+    height: 100vh;
+    margin-top: -50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel .list .item{
+    width: 180px;
+    height: 250px;
+    position: absolute;
+    top: 80%;
+    transform: translateY(-70%);
+    left: 70%;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: 100;
+    transition: 1s;
+}
+
+.carousel .list .item:nth-child(1),
+.carousel .list .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel .list .item:nth-child(3){
+    left: 67%;
+}
+
+.carousel .list .item:nth-child(4){
+    left: calc(67% + 200px);
+}
+
+.carousel .list .item:nth-child(5){
+    left: calc(67% + 400px);
+}
+
+.carousel .list .item:nth-child(6){
+    left: calc(67% + 600px);
+}
+
+.carousel .list .item:nth-child(n+7){
+    left: calc(67% + 800px);
+    opacity: 0;
+}
+
+
+
+
+
+.list .item .content{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    width: 400px;
+    text-align: left;
+    color: #fff;
+    display: none;
+}
+
+.list .item:nth-child(2) .content{
+    display: block;
+}
+
+.content .title{
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #101111fc;
+    font-weight: bold;
+    line-height: 1;
+
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+.content .name{
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+    text-shadow: 3px 4px 4px rgba(255, 255, 255, 0.8);
+
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+}
+
+.content .des{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    margin-left: 5px;
+
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.9s 1 forwards;
+}
+
+.content .btn{
+    margin-left: 5px;
+
+    opacity: 0;
+    animation: animate 1s ease-in-out 1.2s 1 forwards;
+}
+
+.content .btn button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border: 2px solid #fff;
+}
+
+.content .btn button:nth-child(1){
+    margin-right: 15px;
+}
+
+.content .btn button:nth-child(2){
+    background: transparent;
+    color: #f1f8f8fc;
+    border: 2px solid #fff;
+    transition: 0.3s;
+}
+
+.content .btn button:nth-child(2):hover{
+    background-color: #101111fc;
+    color: #fff;
+    border-color: #101111fc;
+}
+
+
+@keyframes animate {
+    
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+/* Carousel */
+
+
+
+/* next prev arrows */
+
+.arrows{
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.arrows button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #101111fc;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.arrows button:hover{
+    background: #fff;
+    color: #000;
+}
+
+
+/* time running */
+.carousel .timeRunning{
+    position: absolute;
+    z-index: 1000;
+    width: 0%;
+    height: 4px;
+    background-color: #101111fc;
+    left: 0;
+    top: 0;
+    animation: runningTime 7s linear 1 forwards;
+}
+
+@keyframes runningTime {
+    
+    from{width: 0%;}
+    to{width: 100%;}
+
+}
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 999px){
+    
+    header{
+        padding-left: 50px;
+    }
+
+    .list .item .content{
+        left: 50px;
+    }
+
+    .content .title, .content .name{
+        font-size: 70px;
+    }
+
+    .content .des{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 690px){
+    header nav a{
+        font-size: 14px;
+        margin-right: 0;
+    }
+
+    .list .item .content{
+        top: 40%;
+    }
+
+    .content .title, .content .name{
+        font-size: 45px;
+    }
+
+    .content .btn button{
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+ </style>
+ 
+ <h2 class="section__header">Multiple industries solutions... </h2>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+    <div class="carousel">
+
+        <div class="list">
+
+            <div class="item" style="background-image: url(img/Food\ M.jpg);">
+                <div class="content">
+                    
+                    <div class="name"></div>
+                    <div class="title">Food Industry</div>
+                    <div class="des">Your Packaging Partner Committed To Supplying You With The Best</div>
+                    <div class="btn">
+                        <button>See More</button>
+                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(image/pharma\ grade\ 3.jpg);">
+                
+                <div class="content">
+                    <div class="title">Pharma Industry</div>
+                    <div class="name"></div>
+                    <div class="des">Your Packaging Partner Committed To Supplying You With The Best</div>
+                    <div class="btn">
+                        <button>See More</button>
+                      
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(image/feed\ grade\ 2.jpg);">
+                
+                <div class="content">
+                    
+                    <div class="name">Feed Industry</div>
+                    <div class="title"></div>
+                    <div class="des">Your Packaging Partner Committed To Supplying You With The Best</div>
+                    <div class="btn">
+                        <button>See More</button>
+                      
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(img/skip\ 2.jpg);">
+
+                <div class="content">
+                    <div class="title"></div>
+                    <div class="name">Skip Industry</div>
+                    <div class="des">Your Packaging Partner Committed To Supplying You With The Best</div>
+                    <div class="btn">
+                        <button>See More</button>
+                      
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+            <div class="item" style="background-image: url(img/chemical\ industry.jpg);">
+                
+                <div class="content">
+                    <div class="title">Chemical Industry</div>
+                    <div class="name"></div>
+                    <div class="des">Your Packaging Partner Committed To Supplying You With The Best</div>
+                    <div class="btn">
+                        <button>See More</button>
+                      
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(image/Bulk\ Bags\ -\ Recycling.jpg);">
+                
+                <div class="content">
+                    <div class="title">Recycling Industry</div>
+                    <div class="name"></div>
+                    <div class="des">Your Packaging Partner Committed To Supplying You With The Best</div>
+                    <div class="btn">
+                        <button>See More</button>
+                       
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(img/agrimain2.jpg);">
+                
+                <div class="content">
+                    <div class="title">Agriculture Industry</div>
+                   
+                    <div class="des">Your Packaging Partner Committed To Supplying You With The Best</div>
+                    <div class="btn">
+                        <button>See More</button>
+                      
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(img/Landhorti1.jpg);">
+                
+                <div class="content">
+                    <div class="title"></div>
+                    <div class="name">Landscaping Industry</div>
+                    <div class="des">Your Packaging Partner Committed To Supplying You With The Best</div>
+                    <div class="btn">
+                        <button>See More</button>
+                      
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(img/forest2.jpg);">
+                
+                <div class="content">
+                    <div class="title"></div>
+                    <div class="name">Forestry & Timber</div>
+                    <div class="des">Your Packaging Partner Committed To Supplying You With The Best</div>
+                    <div class="btn">
+                        <button>See More</button>
+                       
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(img/Mineral1.jpg);">
+                
+                <div class="content">
+                    <div class="title"></div>
+                    <div class="name">Mineral Wool</div>
+                    <div class="des">Your Packaging Partner Committed To Supplying You With The Best</div>
+                    <div class="btn">
+                        <button>See More</button>
+                   
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(img/build3.jpg);">
+                
+                <div class="content">
+                    <div class="title">Building and Construction</div>
+                    <div class="name"></div>
+                    <div class="des">Your Packaging Partner Committed To Supplying You With The Best</div>
+                    <div class="btn">
+                        <button>See More</button>
+                    
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--next prev button-->
+        <div class="arrows">
+            <button class="prev"><</button>
+            <button class="next">></button>
+        </div>
+
+
+        <!-- time running -->
+        <div class="timeRunning"></div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+      <div class="video-container">
+        <video autoplay loop muted plays-inline>
+            <source src="images/Logo-100- -rrp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-content">
+            <h2>Conbag 100% RPP</h2>
+            <p>  At Conbag International Packaging GmbH & Co of Germany, we are proud to introduce a groundbreaking line of products – the 100% rPP bags.
+                 These bags are a testament to our dedication to sustainability and reducing the environmental impact of packaging materials. 
+                 100% rPP stands for 100% recycled polypropylene, a material that is derived from post-consumer and post-industrial waste. 
+                 By harnessing the power of recycling, we have crafted a range of bags that not only serve their purpose effectively but also 
+                 contribute significantly to a circular economy.
+               
+                 <br>Our Range of Products:
+                Discover the versatility and strength of our 100% rPP bags, thoughtfully designed to cater to diverse packaging needs
+                
+                <br>
+                
+               <a href="RPP.html" class="btn">Read More</a>
+                
+                
+                </p>
+           </div>
+           </div>
+      
+
+<!-- newsletter section starts -->
+
+<section class="newsletter">
+
+    <form action="">
+        <h3>subscribe for latest updates</h3>
+        <input type="email" name="" placeholder="enter your email" id="" class="box">
+        <input type="submit" value="subscribe" class="btn">
+        
+        <!--featured section ends-->
+    </form>
+
+</section>
+
+<!-- newsletter section ends -->
+ <!-- reviews section starts  -->
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading"> <span>Facilities And Partnerships</span> </h1>
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+            <div class="card">
+                <i class="fas fa-hotel"></i>
+                <div class="card-body">
+                <h3>manufacturing</h3>
+                <p> Conabag international packaging utilise a number of manufacturing facilities in India. 
+                    Each of which holds a valid certificate for the manufacture of bulk bags From ConBags of Packaging.</p>
+               
+            </div>
+
+            </div>
+        </div>
+
+            <div class="swiper-slide box">
+                <div class="card">
+                    <i class="fas fa-cubes"></i>
+                    <div class="card-body">
+                <h3>Sales & Distribution</h3>
+                <p> Conabag international packaging operates from offices in Berkeley, Gloucestershire and Indore, 
+					India and distributes from warehousing facilities based in Worcestershire and Staffordshire, United Kingdom</p>
+                </div>
+
+            </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="card">
+                    <i class="fas fa-handshake"></i>
+                    <div class="card-body">
+                <h3>Partner Company</h3>
+                <p> Conabag international packaging works closely with its freight forward companies to help maintain an
+					 excellent delivery service which allows us to offer deliveries across the United Kingdom & Europe.</p>
+				
+                </div>
+
+            </div>
+            </div>
+			</div>
+			</div>
+		
+            
+    
+</section>
+
+
+
+<!-- reviews section ends -->
+
+<!-- deal section starts  -->
+
+<section class="deal">
+
+    <div class="content">
+       <h1>Your Packaging solutions Conbag International Packaging.</h1>
+        <p>Conbag International Packaging GmbH & Co of Germany has, Est 2020, successfully supplied a comprehensive range of FIBCs (Flexible Intermediate Bulk Containers), 
+          also known as Bulk Bags, to a wide range of business customers across the UK and, more recently, in Europe and other 
+          countries worldwide. Our teams in the UK and India are dedicated to supplying you with the best packing solutions for your business.
+           Along with bulk bags, we also supply many other products, such as woven polypropylene sacks, sandbags, garden waste/curbside 
+           collection bags, polythene bags, liners, and many more. We hold large stocks in our UK warehouses for both immediate delivery
+            and those products that have been manufactured to specific requirements for our existing customers that we have contracted with 
+            them to stock on their behalf.</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="image">
+        <img src="image/sustainaible furture.jpg" alt="">
+    </div>
+
+</section>
+
+<!-- deal section ends -->
+
+
+<!-- reviews section starts  -->
+
+
+
+<!-- reviews section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+        <a href="index.html" class="logo"><img src="images/conbag-header.png" alt=""; height="90"; width="280"></a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i>  Hauptstrasse 79, 35716 Dietzhölztal, Germany, Germany  </a>
+      <a href="#"> <i class="fas fa-clock"></i>Working : Mon-Thursday (08:00 - 16:30, Fri 08:00-15:00) </a>
+      
+          
+      </div>
+
+      <div class="box">
+          <h3>ABOUT</h3>
+          <a href="index.html"> <i class="fas fa-arrow-right"></i>Home</a>
+          <a href="about.html"> <i class="fas fa-arrow-right"></i>About</a>
+          <a href="SERVICES (2).html"> <i class="fas fa-arrow-right"></i>Services</a>
+          <a href="contact us.html"> <i class="fas fa-arrow-right"></i>Contact</a>
+      </div>
+
+      <div class="box">
+          <h3>COMPANY</h3>
+         
+          <a href="#"> <i class="fas fa-arrow-right"></i>Privacy policy</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i>Cookie policy</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i>Brochures</a>
+         
+          <a href="https://www.conbag.de/faq/"> <i class="fas fa-arrow-right"></i> FAQ's </a>
+ 
+
+</div>
+<div class="box">
+          <h3>GET IN TOUCH</h3>
+          <a href="#"> <i class="fas fa-phone"></i> Tel: +49(0)2774-92424-0</a>
+    
+          <a href="#"> <i class="fas fa-envelope"></i> Email:   info@conbag.de</a>
+    <a href="#">  Registered number:  HRA 7771</a>
+          
+      
+  </div>
+
+
+  <div class="share">
+         <a href="https://www.linkedin.com/company/69201484/admin/feed/posts/" class="fab fa-linkedin"></a>
+      <a href="https://www.facebook.com/ConbagBulkPackagingLtd/" class="fab fa-facebook-f"></a>
+      <a href="https://twitter.com/RdaLtd" class="fab fa-twitter"></a>
+      <a href="https://www.instagram.com/rdabulkpackaging/?next=%2F" class="fab fa-instagram"></a>
+
+   
+  </div>
+</div>
+  <div class="credit"> Created by <span> 2025 Conbag International Packaging GmbH & Co of Germany</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- loader  -->
+
+<div class="loader-container">
+  <video src="images/Comp 1_1.mp4" autoplay muted loop> </video>
+</div>
+<!--loader-->
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
 </html>

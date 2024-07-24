@@ -9,12 +9,12 @@
 	
 		:root{
 			--green:#101111fc;
-    --dark-color:#3fcf1e;
-    --black:#444;
-    --light-color:#666;
-    --border:.1rem solid rgba(0,0,0,.1);
-    --border-hover:.1rem solid var(--black);
-    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+			--dark-color:rgb(33, 145, 80)35
+			--black:#444;
+			--light-color:#666;
+			--border:.1rem solid rgba(0,0,0,.1);
+			--border-hover:.1rem solid var(--black);
+			--box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 		}
 		
 		*{
@@ -152,7 +152,8 @@
 			border:var(--border);
 		}
 		
-		.btn{
+		
+.btn{
   margin-top: 1rem;
   display:inline-block;
   padding:.9rem 3rem;
@@ -164,6 +165,7 @@
   cursor: pointer;
   font-weight: 500;
 }
+
 		
 		.btn:hover{
 			background:var(--dark-color);
@@ -179,7 +181,7 @@
 		
 		.navbar {
 			overflow: hidden;
-			background: #4CAF50;
+			background: #101111fc;
 		}
 		.navbar a {
 			float: left;
@@ -209,7 +211,7 @@
 		.header .header-0 .logo{
 			align-items:start;
 			justify-content:space-between;
-			font-size: 2.5px;
+			font-size: 2.5rem;
 			font-weight: bolder;
 			color:var(--black);
 		}
@@ -217,7 +219,6 @@
 		.header .header-0 .logo a{
 			align-items:start;
 			justify-content:left;
-			font-size: 1rem;
 			color:var(--green);
 		}
 		
@@ -413,7 +414,7 @@
 		.home{
 			width: 100%;
 			height: 110vh;
-			background: url(img/about1.jpg)no-repeat;
+			background: url(img/Mining\ &\ quarrying\ 1.jpg)no-repeat;
 			background-size: cover;
 			opacity:222222;
 			
@@ -449,7 +450,7 @@
 		}
 		
 		.home .row .content h3{
-			color:#0a0a0a;
+			color:#101111fc;
 		   
 			font-size: 6.2rem;
 			font-weight:bolder;
@@ -458,22 +459,22 @@
 		}
 		
 		.home .row .content p{
-			color:#101111fc;
+			color:#0e0000;
 			background-attachment: var(--box-shadow);
-			font-size: 2.4rem;
-			font-weight:400;
+			font-size: 2.8rem;
+			font-weight: bolder;
 			font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 			padding:2rem 0;
 		}
 		
 		.Hcard {
-		   background-color:#ffffff90;
+		   background-color:#abb3ab70;
 			border-radius: 110px;
-			box-shadow: 0px 5px 15px rgba(12, 12, 12, 0.118);
+			box-shadow: 0px 5px 15px rgba(12, 12, 12, 0.2);
 			justify-content: space-around; /* Adjust the spacing between cards */
 			margin: 2px;
-			max-width: 800px;
-			padding: 30px;
+			max-width: 350px;
+			padding: 50px;
 			text-align:center;
 			transition: transform 0.2s ease-in-out;
 		}
@@ -512,22 +513,22 @@
 			border-radius: 5px;
 			transition: all 0.3s ease;
 		  }
-  .nav-links li a:hover{
-    background: #3a3b3c50;
-  }
-  .nav-links .mobile-item{
-    display: none;
-  }
-  .nav-links .drop-menu{
-    position: absolute;
-    background: #242526cd;
-    width: 180px;
-    line-height: 45px;
-    top: 85px;
-    opacity: 0;
-    visibility: hidden;
-    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-  }
+		  .nav-links li a:hover{
+			background: #3a3b3c50;
+		  }
+		  .nav-links .mobile-item{
+			display: none;
+		  }
+		  .nav-links .drop-menu{
+			position: absolute;
+			background: #24242577;
+			width: 180px;
+			line-height: 45px;
+			top: 85px;
+			opacity: 0;
+			visibility: hidden;
+			box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+		  }
 		  .nav-links li:hover .drop-menu,
 		  .nav-links li:hover .mega-box{
 			transition: all 0.3s ease;
@@ -552,7 +553,7 @@
 			visibility: hidden;
 		  }
 		  .mega-box .content{
-			background: #242624cd;
+			background: #242526cd;
 			padding: 25px 20px;
 			display: flex;
 			width: 100%;
@@ -737,7 +738,36 @@
 			color:#fff;
 		}
 		
+		.newsletter{
+			background:url(images/mainbg.jpeg) no-repeat;
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
 		
+		.newsletter form{
+			max-width: 45rem;
+			margin-left: auto;
+			text-align: center;
+			padding:5rem 0;
+		}
+		
+		.newsletter form h3{
+			font-size: 2.2rem;
+			color:#fff;
+			padding-bottom: .7rem;
+			font-weight: normal;
+		}
+		
+		.newsletter form .box{
+			width: 100%;
+			margin: .7rem 0;
+			padding:1rem 1.2rem;
+			font-size: 1.6rem;
+			color:var(--black);
+			border-radius: .5rem;
+			text-transform: none;
+		}
 		
 		.arrivals .arrivals-slider .box{
 			display: flex;
@@ -882,7 +912,7 @@
 		}
 		
 		.footer .box-container .box h3{
-			font-size: 2.2px;
+			font-size: 2.2rem;
 			color:var(--black);
 			padding:1rem 0;
 		}
@@ -957,9 +987,8 @@
 			display: none;
 		}
 		
-		.loader-container video{
-			height:50rem;
-			width: 100rem;
+		.loader-container img{
+			height:10rem;
 		}
 		
 		
@@ -1061,7 +1090,7 @@
 		}
 	</style>
 
-    <title>About Us</title>
+    <title>Mining And Quarrying</title>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
@@ -1265,14 +1294,13 @@
         
         <div class="Hcard">
         <div class="content">
-        <h3>Your partner in
-			packaging solutions</h3>
+        <h3>Mining And Quarrying</h3>
                 
                  
-            <p>A privately owned company that has been trading since its establishment in 1999. Our core business is the importation and supply of Flexible Intermediate Bulk Containers (FIBC’s), otherwise known as bulk bags, tote bags or tay bags.
-
-also supply products to customers in agricultural, chemical, recycling, waste management, building and many more business sectors.</p>
-            <a href="index.html" class="btn">Explore</a>
+            <p>Your packaging partner committed to supplying 
+              
+                 you with the best</p>
+            <a href="#" class="btn">Explore</a>
         </div>
         </div>
      </div>   
@@ -1281,18 +1309,93 @@ also supply products to customers in agricultural, chemical, recycling, waste ma
 
 <!-- home section end -->
 
+
 <section class="deal">
 
     <div class="content">
        
-        <h1>Welcome To Conbag</h1>
-		
-        <p>
-			Conbag Has All The Experience From Conbag., Who Have Been Successfully Supplying A Comprehensive Range Of FIBC’s (Flexible Intermediate Bulk Containers), Also Known As Bulk Bags To Many Different Sectors Across The UK, For Over 4 Years And More Recently In Europe And Other Countries Worldwide. Our Teams Are Dedicated To Supplying You With The Best Packaging Solution For Your Business. Along With Bulk Bags We Also Supply Many Other Products Such As; Woven Polypropylene Sacks, Sandbags, Garden Waste/Kerbside Collection Bags, Polythene Bags, Liners And Many More. We Hold Stocks In Our Irish Warehouses For Both Immediate Delivery,
-			 And Also Those Products That Have Been Manufactured To Specific Requirements For Our Existing Customers That We Have Contracted With Them To Stock On Their Behalf.</p>
-        <a href="index.html" class="btn">More About Us</a>
+        <h1>Mining And Quarrying</h1>
+		<h3>
+			Flexible, Strong And Cost Effective</h3>
+        <p>With Conbags International Packaging On Your Side, Transport And Storage Have Been Made Easy For All Your Aggregates. We Offer A Wide Range Of Products Which Helps In The Transportation And Storage Of Aggregates In Cost And Time-Efficient Ways. Conbags International Packaging Understands The Importance Of The Correct Packaging In The Mining And Quarrying Industry.
+			 FIBCs Are Customisable And Versatile Making Them A Great Solution To Keep Products Contained And Meet Industry Requirements.</p>
+        <a href="#" class="btn">More About Us</a>
     </div>
 </section>
+
+<!-- deal section starts  -->
+
+<section class="deal">
+
+    <div class="image">
+        <img src="img/mining1.jpg" alt="">
+    </div>
+    <div class="content">
+	
+        <h3>We Regularly Meet The Requirements Of Bulk Pack:</h3>
+        
+        <p>• Ballast
+			<br>• Copper
+			<br>• Cobalt
+			<br>• Titanium Oxide
+			<br>• Bentonite
+			<br>• Mineral Sands
+			<br>• Quartz, Lime And Many More</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+   
+</section>
+
+<!-- deal section ends -->
+
+<!-- deal section starts  -->
+
+<section class="deal">
+
+   
+    <div class="content">	
+        <h3>Product Range:</h3>
+       
+        <p>• Uncoated Fabric From 110gsm To 245gsm (Grams Per Square Metre).
+			<br>• Sift Proof.
+			<br>• Coated Fabric
+			<br>• Printed Up To 4 Sides In 3 Colours.
+			<br>• In Coloured Fabric.
+			<br>• U+2 Or Circular Design.
+			<br>• Baffle Bag/Q Bag
+			<br>• With Tunnel Lifting Sleeves.
+		    <br>• With Different Top Attachments I.E. Skirt Top Or Fill Top.
+			<br>• With Discharge Spout In The Base.
+			</p>
+			<a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="image">
+        <img src="img/Mining & Quarrying.jpg" alt="">
+    </div>
+</section>
+
+<!-- deal section ends -->
+
+<!-- newsletter section starts -->
+
+<section class="newsletter">
+
+    <form action="">
+        <h3>subscribe for latest updates</h3>
+        <input type="email" name="" placeholder="enter your email" id="" class="box">
+        <input type="submit" value="subscribe" class="btn">
+        
+        <!--featured section ends-->
+    </form>
+
+</section>
+
+<!-- newsletter section ends -->
+
+
+
 
 
 <!-- reviews section starts  -->
@@ -1310,9 +1413,8 @@ also supply products to customers in agricultural, chemical, recycling, waste ma
                 <i class="fas fa-hotel"></i>
                 <div class="card-body">
                 <h3>manufacturing</h3>
-                <p> Conabag international packaging utilise a number of manufacturing facilities in India. 
-                    Each of which holds a valid certificate for the manufacture of bulk bags From ConBags of Packaging.</p>
-               
+                <p>Conbags International Packaging utilise a number of manufacturing facilities in India. Each of which holds a
+                     valid certificate for the manufacture of bulk bags from the Indian Institute of Packaging..</p>
                
             </div>
 
@@ -1323,9 +1425,9 @@ also supply products to customers in agricultural, chemical, recycling, waste ma
                 <div class="card">
                     <i class="fas fa-cubes"></i>
                     <div class="card-body">
-                <h3>Sales & Distribution</h3>
-                <p> Conabag international packaging operates from offices in Berkeley, Gloucestershire and Indore, 
-					India and distributes from warehousing facilities based in Worcestershire and Staffordshire, United Kingdom</p>
+                <h3>Distribution</h3>
+                <p>Conbags International Packaging operates from warehousing facilities based in Co.
+                     Meath, Republic of.It involves activities such as transportation, warehousing, logistics.</p>
                 </div>
 
             </div>
@@ -1336,17 +1438,29 @@ also supply products to customers in agricultural, chemical, recycling, waste ma
                     <i class="fas fa-handshake"></i>
                     <div class="card-body">
                 <h3>Partner Company</h3>
-                <p> Conabag international packaging works closely with its freight forward companies to help maintain an
-					 excellent delivery service which allows us offer deliveries across the world.</p>
-				
+                <p>Conbags International Packaging works closely with its freight forward companies to help maintain an excellent delivery service which allows us to offer deliveries across the Europe.</p>
                 </div>
 
             </div>
             </div>
-			</div>
-			</div>
-		
             
+                </div>
+
+            </div>
+            </div>
+
+            
+                </div>
+
+            </div>
+            </div>
+
+            
+            </div>
+
+        </div>
+
+    </div>
     
 </section>
 
@@ -1359,27 +1473,24 @@ also supply products to customers in agricultural, chemical, recycling, waste ma
 <section class="deal">
 
     <div class="content">
-       <h1>What Conbag can do for you....</h1>
-	   
-        <p>1. Consistently supply a fully certified quality product.
-			<br>2. Offer a competitive price.
-			<br>3. Offer a complete inventory management system for all your FIBC requirements.
-			<br>4. Hold 6 months of your required stock in our UK
-			warehouses; reducing lead times and helping with
-			your cash flow.
-			
-			<br>5. Allocate a trained Member of our team to look after all your requirements.</p>
+        <h2>Conbags International Packaging Can Do For You....</h2>
        
+        <p>• Consistently Supply A Fully Certified Quality Product.
+			<br>• Offer A Competitive Price.
+			<br>• Offer A Complete Inventory Management System .
+			<br>• Hold Up To 6 Months Of Your Required Stock In Our Warehouses.
+			<br>• Allocate An Account Manager For Your Business Who Can Be Contacted At Any Time By Phone, Email Or Via.
+			<br>• Provide Excellent Service.</p>
+        <a href="#" class="btn">Read More</a>
     </div>
 
     <div class="image">
-        <img src="img/lifestyle-ecofriendly-people (1).jpg" alt="">
+        <img src="img/indus 1.jpg" alt="">
     </div>
 
 </section>
 
 <!-- deal section ends -->
-
 
 <!-- footer section starts  -->
 
@@ -1399,7 +1510,7 @@ also supply products to customers in agricultural, chemical, recycling, waste ma
 			<h3>ABOUT</h3>
 			<a href="index.html"> <i class="fas fa-arrow-right"></i>Home</a>
 			<a href="about.html"> <i class="fas fa-arrow-right"></i>About</a>
-			<a href="services.html"> <i class="fas fa-arrow-right"></i>Services</a>
+			<a href="SERVICES (2).html"> <i class="fas fa-arrow-right"></i>Services</a>
 			<a href="contact us.html"> <i class="fas fa-arrow-right"></i>Contact</a>
 		</div>
   
@@ -1439,13 +1550,14 @@ also supply products to customers in agricultural, chemical, recycling, waste ma
   </section>
   
   <!-- footer section ends -->
-  
-  
-  
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  
-  <!-- custom js file link  -->
-  <script src="main.js/script.js"></script>
-  
-  </body>
-  </html>
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="main.js/script.js"></script>
+
+</body>
+</html>
