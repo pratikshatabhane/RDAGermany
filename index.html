@@ -42,7 +42,13 @@
         </div>
         </div>
  
-           
+           <div id="google_element"></div>
+           <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+           <script>
+            function loadGoogleTranslate (){
+                new google.translate.TranslateElement("google_element");
+            }
+           </script>
            
         </div>
         
@@ -226,15 +232,15 @@
 
     <div class="content">
        
-       <h1>Welcome to Conbag International Packaging 
-        <br>GmbH & Co of Germany.</h1>
-        <p>Conbag International Packaging GmbH & Co of Germany. has, since 2020, successfully supplied a comprehensive range of FIBC’s (Flexible Intermediate Bulk Containers), 
-          also known as Bulk Bags, to a wide range of business customers across the UK and more recently in Europe and other countries
-           worldwide. Our dedicated teams in the UK and India are committed to supplying you with the best packing solution for your business.
-            Along with Bulk bags we also supply many other products such as; woven polypropylene sacks, sandbags, garden waste/kerbside 
-            collection bags, polythene bags, liners and many more. We hold large stocks in our UK warehouses for both immediate delivery,
-             and also those products that have been manufactured to specific requirements for our existing customers that we have contracted 
-             with them to stock on their behalf.</p>
+       <h1>Willkommen bei Conbag International Packaging GmbH & Co. KG.</h1>
+        <p>Seit 2020 stehen wir für Qualität und Kundenzufriedenheit – nicht nur in Deutschland, sondern inzwischen weltweit.
+            Zu unserer großen Freude dürfen wir seit 2024 nun auch Teil der RDA Familie sein. RDA Bulk Packaging Ltd. (Link zur RDA-Seite?) ist ein bereits seit 25 Jahren bestehendes Unternehmen mit Sitzen in Großbritannien, Irland und Indien.
+            Durch den Zusammenschluss unserer Teams mit Ihrem Fachwissen und der langjährigen Erfahrung ist es uns möglich, unseren Kunden noch mehr individuelle, auf ihre jeweiligen Bedürfnisse abgestimmte Verpackungslösungen anzubieten. Natürlich mit einem unvergleichlich hohen Anspruch an Qualität und Service. 
+            Conbag bleibt jedoch weiter lokal – während wir unseren Kunden eine globale Reichweite bieten können, sind unsere Mitarbeiter weiterhin vor Ort um Ihnen bei all Ihren Anforderungen zu helfen und zu unterstützen.
+             
+            Sie und Ihr Unternehmen zu unterstützen ist unser Hauptziel bei Conbag International Packaging GmbH & Co. KG und RDA Bulk Packaging Ltd.
+            Wir liefern zuverlässige Produkte und steigern dabei die Kosteneffizienz unserer Kunden. Eines unserer Ziele ist es, bestehende und neue Produkte und Märkte kontinuierlich zu verbessern und weiterzuentwickeln.
+            .</p>
         <a href="about.html" class="btn">More About Us</a>
     </div>
 </section>
@@ -246,18 +252,19 @@
   <h2 class="section__header">Sustainable products for your business...</h2>
  <div class="slider-container">
         <div class="slider">
+            
             <div class="slide"><img src="image/2 Loop Bulk Bags.jpg" alt="FIBC"><p>FIBC</p></div>
-            <div class="slide"><img src="img/container1.jpg" alt="Container Liners"><p>Container Liners</p></div>
+            <div class="slide"><img src="img/container canva.jpg" alt="Container Liners"><p>Container Liners</p></div>
             <div class="slide"><img src="img/easy box.jpg" alt="Easy Box"><p>Easy Box</p></div>
-            <div class="slide"><img src="img/Roofing Underlay.webp" alt="Roofing Underlay"><p>Roofing Underlay</p></div>
-            <div class="slide"><img src="img/Mineral Wolle1.jpg" alt="Roofing Underlay"><p>Mineral Wolle</p></div>
-            <!-- Repeat slides to ensure continuous sliding -->
-            <div class="slide"><img src="image/factory images 3.jpg" alt="FIBC"><p>FIBC</p></div>
-          
-            <div class="slide"><img src="img/easy box2.jpg" alt="Easy Box"><p>Easy Box</p></div>
-            <div class="slide"><img src="img/19334.jpg.555x555_q85.jpg" alt="Roofing Underlay"><p>Roofing Underlay</p></div>
-            <div class="slide"><img src="img/conatiner2.webp" alt="Container Liners"><p>Container Liners</p></div>
-            <div class="slide"><img src="img/Mineral Wolle2.avif" alt="Roofing Underlay"><p>Mineral Wolle</p></div>
+            <div class="slide"><img src="img/agriM.jpg" alt="Agricultural Bags"><p>Agricultural Bags</p></div>
+            <div class="slide"><img src="img/asb1.jpg" alt="Leno Net Bags"><p>Asbestos Bags</p></div>
+            <div class="slide"><img src="img/about1.jpg" alt="Standard Bags"><p>Standard Bags</p></div>
+              <!-- Repeat slides to ensure continuous sliding -->
+            <div class="slide"><img src="image/Waste Management.jpg" alt="Plastic recycling Bags"><p>Plastic recycling Bags</p></div>
+            <div class="slide"><img src="img/pp2.webp" alt="PPWoven Sacks"><p>PPWoven Sacks</p></div>
+            <div class="slide"><img src="img/lenoM.jpg" alt="Roofing Underlay"><p>Leno Net Bags</p></div>
+            <div class="slide"><img src="img/Asbestos bags.jpg" alt="Leno Net Bags"><p>Asbestos Bags</p></div>
+            <div class="slide"><img src="img/barrow bags 2.jpg" alt="Barrow Bags"><p>Barrow Bags</p></div>
         </div>
     </div>
 
@@ -265,7 +272,7 @@
       .slider-container {
           width: 110%;
           overflow: hidden;
-          position: relative;
+          position:relative;
           border: 1px solid #33f11a;
           border-radius: 10px;
           background-color: #fff;
@@ -276,6 +283,7 @@
       .slider {
           display: flex;
           animation: slide 30s linear infinite;
+         
           text-align: end;
         
       }
@@ -298,6 +306,7 @@
           font-size: 34px;
       }
       
+    
       @keyframes slide {
           0% {
               transform: translateX(0);
@@ -730,6 +739,19 @@ a:hover{
                 <div class="content">
                     <div class="title"></div>
                     <div class="name">Skip Industry</div>
+                    <div class="des">Your Packaging Partner Committed To Supplying You With The Best</div>
+                    <div class="btn">
+                        <button>See More</button>
+                      
+                    </div>
+                </div>
+
+            </div>
+            <div class="item" style="background-image: url(img/4.jpg);">
+
+                <div class="content">
+                    <div class="title"></div>
+                    <div class="name">Ceramics and glass</div>
                     <div class="des">Your Packaging Partner Committed To Supplying You With The Best</div>
                     <div class="btn">
                         <button>See More</button>
