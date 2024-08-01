@@ -107,12 +107,6 @@ function fadeOut(){
   setTimeout(loader, 4000);
 }
 
- src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate">
-          
-            function loadGoogleTranslate (){
-                new google.translate.TranslateElement("google_element");
-            }
-         
 var swiper = new Swiper(".books-slider", {
   loop:true,
   centeredSlides: true,
