@@ -243,81 +243,90 @@
 <br>
 <br>
 <br>
-
-  <h2 class="section__header">Nachhaltige Produkte für Ihr Unternehmen...</h2>
- <div class="slider-container">
-        <div class="slider">
-            
-            <div class="slide"><img src="image/2 Loop Bulk Bags.jpg" alt="FIBC"><p>FIBC</p></div>
-            <div class="slide"><img src="img/container design 1.png" alt="Container Liners"><p>Container Liners</p></div>
-            <div class="slide"><img src="img/easy box.jpg" alt="Easy Box"><p>Easy Box</p></div>
-            <div class="slide"><img src="img/agriM.jpg" alt="Agricultural Bags"><p>Agricultural Bags</p></div>
-            <div class="slide"><img src="img/asb1.jpg" alt="Leno Net Bags"><p>Big Bags Asbest</p></div>
-            <div class="slide"><img src="img/min M'.jpg" alt="Mineral Wool"><p>Mineral Wolle</p></div>
-              <!-- Repeat slides to ensure continuous sliding -->
-            <div class="slide"><img src="image/Waste Management.jpg" alt="Plastic recycling Bags"><p>Plastic recycling Bags</p></div>
-            <div class="slide"><img src="img/pp2.webp" alt="PPWoven Sacks"><p>PPWoven Sacks</p></div>
-            <div class="slide"><img src="img/lenoM.jpg" alt="Roofing Underlay"><p>Leno Net Bags</p></div>
-            <div class="slide"><img src="img/Asbestos bags.jpg" alt="Leno Net Bags"><p>Asbestos Bags</p></div>
-            <div class="slide"><img src="img/barrow bags 2.jpg" alt="Barrow Bags"><p>Barrow Bags</p></div>
-        </div>
-    </div>
-
-    <style>
-      .slider-container {
-          width: 110%;
-          overflow: hidden;
-          position:relative;
-          border: 1px solid #33f11a;
-          border-radius: 10px;
-          background-color: #fff;
-          box-shadow: 0 4px 8px rgba(13, 14, 13, 0.412);
-         
-      }
-      
-      .slider {
-          display: flex;
-          animation: slide 30s linear infinite;
-         
-          text-align: end;
+<h2 class="section__header">Nachhaltige Produkte für Ihr Unternehmen...</h2>
+<div class="slider-container">
+    <div class="slider">
+        <!-- First set of slides -->
+        <div class="slide"><img src="img/Fibc Front.jpg" alt="FIBC"><p>FIBC</p></div>
+        <div class="slide"><img src="image/Pharma 2.png" alt="Pharma Garde Bags"><p>Pharma Garde Bags</p></div>
+        <div class="slide"><img src="img/baffle1.webp" alt="Food Grade Bags"><p>Food Grade Bags</p></div>
+        <div class="slide"><img src="img/Conducrtive.jpg" alt="Conductive Bags"><p>Conductive Bags</p></div>
+        <div class="slide"><img src="img/potato.jpg" alt="Agriculture Bags"><p>Agriculture Bags</p></div>
+        <div class="slide"><img src="img/1 and 2 loop.jpg" alt="Single/Double Loop"><p>Single/Double Loop</p></div>
+        <div class="slide"><img src="img/Net bags conbag.jpg" alt="Net Bags"><p>Net Bags</p></div>
+        <div class="slide"><img src="img/container design 1.png" alt="Container Liners"><p>Container Liners</p></div>
+        <div class="slide"><img src="img/Plattern bags.jpg" alt="Plattern Bags"><p>Plattern Bags</p></div>
+        <div class="slide"><img src="image/asb1.png" alt="Leno Net Bags"><p>Big Bags Asbest</p></div>
+        <div class="slide"><img src="img/min M'.jpg" alt="Mineral Wool"><p>Mineral Wolle</p></div>
+        <div class="slide"><img src="img/ppM.webp" alt="FIBC"><p>Small Sacks</p></div>
         
+        <!-- Duplicate set of slides for continuous effect -->
+        <div class="slide"><img src="img/Fibc Front.jpg" alt="FIBC"><p>FIBC</p></div>
+        <div class="slide"><img src="image/Pharma 2.png" alt="Pharma Garde Bags"><p>Pharma Garde Bags</p></div>
+        <div class="slide"><img src="img/baffle1.webp" alt="Food Grade Bags"><p>Food Grade Bags</p></div>
+        <div class="slide"><img src="img/Conducrtive.jpg" alt="Conductive Bags"><p>Conductive Bags</p></div>
+        <div class="slide"><img src="img/potato.jpg" alt="Agriculture Bags"><p>Agriculture Bags</p></div>
+        <div class="slide"><img src="img/1 and 2 loop.jpg" alt="Single/Double Loop"><p>Single/Double Loop</p></div>
+        <div class="slide"><img src="img/Net bags conbag.jpg" alt="Net Bags"><p>Net Bags</p></div>
+        <div class="slide"><img src="img/container design 1.png" alt="Container Liners"><p>Container Liners</p></div>
+        <div class="slide"><img src="img/Asbestos-Skip-bags-1.jpg" alt="Plattern Bags"><p>Plattern Bags</p></div>
+        <div class="slide"><img src="image/asb1.png" alt="Leno Net Bags"><p>Big Bags Asbest</p></div>
+        <div class="slide"><img src="img/min M'.jpg" alt="Mineral Wool"><p>Mineral Wolle</p></div>
+        <div class="slide"><img src="img/ppM.webp" alt="FIBC"><p>Small Sacks</p></div>
+    </div>
+</div>
+
+<style>
+  .slider-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid #33f11a;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(13, 14, 13, 0.412);
+  }
+  
+  .slider {
+      display: flex;
+      animation: slide 40s linear infinite;
+      text-align: end;
+  }
+  
+  .slide {
+      min-width: 40%;
+      box-sizing: border-box;
+      padding: 20px;
+      text-align: center;
+  }
+  
+  .slide img {
+      width: 100%;
+      height: 350px;
+      border-radius: 10px;
+  }
+  
+  .slide p {
+      margin-top: 10px;
+      font-size: 34px;
+  }
+  
+  @keyframes slide {
+      0% {
+          transform: translateX(0);
       }
-      
-      .slide {
-          min-width: 30%;
-          box-sizing: border-box;
-          padding: 20px;
-          text-align: center;
+      100% {
+          transform: translateX(-500%);
       }
-      
-      .slide img {
-          width: 100%;
-          height: 320px;
-          border-radius: 10px;
-      }
-      
-      .slide p {
-          margin-top: 10px;
-          font-size: 34px;
-      }
-      
-    
-      @keyframes slide {
-          0% {
-              transform: translateX(0);
-          }
-          100% {
-              transform: translateX(-100%);
-          }
-      }
-      </style>
+  }
+</style>
 
 
 <section class="deal">
 
   <div class="content">
     <div class="image">
-      <img src="images/father-teaching-his-small-daughter-how-plant-flowers-plant-nursery.jpg" alt="">
+      <img src="image/father-teaching-his-small-daughter-how-plant-flowers-plant-nursery.png" alt="">
   </div>
      <h1>Nachhaltigkeit bei Conbag International Packaging umweltfreundlicher gestalten.</h1>
       <p>Bei Conbag International Packaging GmbH & Co, Deutschland, ist Nachhaltigkeit keine nachträgliche Überlegung; sie ist vielmehr ein integraler Bestandteil jeder Phase unserer Betriebsabläufe. Im Laufe der Jahre, als führendes Unternehmen für innovative Verpackungslösungen, verstehen wir die Dringlichkeit, Umweltprobleme anzugehen. Wir setzen uns dafür ein, eine grünere Zukunft durch kreative und nachhaltige Verpackungslösungen zu gestalten. Unser Engagement für Nachhaltigkeit treibt jeden Aspekt unserer Betriebsabläufe an, während wir den Weg zu einer umweltverantwortlicheren Industrie beschreiten. Durch die Integration umweltfreundlicher Praktiken, die Nutzung modernster Technologien und die Priorisierung der Ressourceneffizienz wollen wir die Umweltbelastung verringern und eine Kreislaufwirtschaft fördern. Begleiten Sie uns auf dieser Reise, während wir die Verpackungslandschaft transformieren und eine Welt anstreben, 
