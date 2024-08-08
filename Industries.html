@@ -408,6 +408,46 @@ nav{
     100%{content: "Construction";}
     
 }
+
+
+.deal{
+    background:#f3f3f3;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.deal .content{
+    flex:1 1 42rem;
+}
+
+.deal .image{
+    flex:1 1 42rem;
+}
+
+.deal .image img{
+    width: 100%;
+}
+
+.deal .content h3{
+    color:var(--green);
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+}
+
+.deal .content h1{
+    color:var(--black);
+    font-size: 4rem;
+}
+
+.deal .content p{
+    padding:1rem 0;
+    color:var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
 .content p{
   font-size: 17px;
     color: #fff;
@@ -622,7 +662,7 @@ html{
   <div class="header-0">
      
     <a href="index.html" class="logo"><img src="images/conbag-header.png" alt=""; height="90"; width="280"></a>
-   
+    
    
 
       <div class="icons">
@@ -632,7 +672,8 @@ html{
          
       </div>
       </div>
-         
+
+       
          
       </div>
       
@@ -646,18 +687,18 @@ html{
         
         <ul class="nav-links">
           <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Startseite</a></li>
           <li>
-              <a href="about.html" class="desktop-item">About</a>
+              <a href="about.html" class="desktop-item">Über uns</a>
               <input type="checkbox" id="showDrop">
               <label for="showDrop" class="mobile-item">Dropdown Menu</label>
              
            <ul class="drop-menu">
                         
-                        <li><a href="SERVICES (2).html">Services</a></li>
+                        <li><a href="SERVICES (2).html">Dienstleistungen</a></li>
                         <li><a href="RPP.html">100% RPP</a></li>
-                        <li><a href="sustainability.html">Sustainability</a></li>
-                        <li><a href="circular.html">Circular Economy</a></li>
+                        <li><a href="sustainability.html">Nachhaltigkeit</a></li>
+                        <li><a href="circular.html"> Kreislaufwirtshaft</a></li>
                       </ul>
                  
             </li>
@@ -665,7 +706,7 @@ html{
           
          <li>
           <li>
-            <a href="Industries.html" class="desktop-item">Industries</a>
+            <a href="Industries.html" class="desktop-item">Industrien</a>
             <input type="checkbox" id="showMega">
             <label for="showMega" class="mobile-item">Mega Menu</label>
             <div class="mega-box">
@@ -676,38 +717,38 @@ html{
                 <div class="row">
                 
                   <ul class="mega-links">
-                    <li><a href="food grade bags.html">Food Industry</a></li>
-                    <li><a href="Feed Grade.html">Animal Feed Industry</a></li>
-                    <li><a href="Skip Industry.html">Skip Industry</a></li>
-                    <li><a href="Pharma industry.html">Pharma Industry</a></li>
-                    <li><a href="Roofing Underlay.html">Roofing Underlay</a></li>
+                    <li><a href="food grade bags.html">Lebensmittel Industrie</a></li>
+                    <li><a href="Feed Grade.html">Futtermittel Industrie</a></li>
+                    <li><a href="Skip Industry.html">Abfall Industrie</a></li>
+                    <li><a href="Pharma industry.html">Pharma Industrie</a></li>
+                    <li><a href="Roofing Underlay.html">Dachunterlage</a></li>
                   </ul>
                 </div>
                 <div class="row">
                   
                   <ul class="mega-links">
-                      <li><a href="Chemical.html">Chemical Industry</a></li>
-                      <li><a href="rindustry.html">Plastic Recycling Industry</a></li>
-                      <li><a href="land industry.html"> Earth & Sand Industry</a></li>
-                      <li><a href="Agriculture.html">Agriculture & seeds</a></li>
-                      <li><a href="Mineral wolle.html">Mineral Wolle</a></li>
+                      <li><a href="Chemical.html">Chemie Industrie</a></li>
+                      <li><a href="rindustry.html">Kunststoffrecycling</a></li>
+                      <li><a href="land industry.html">ErdeSand Industrie</a></li>
+                      <li><a href="Agriculture.html">Landwirtschaft Saaten</a></li>
+                      <li><a href="Mineral wolle.html">Mineralwolle</a></li>
                    
                   </ul>
                 </div>
                 <div class="row">
                  <ul class="mega-links">
-                    <li><a href="Mining and Quarrying.html">Mining and Underground</a></li>
-                    <li><a href="Building & Construction.html">Building and Construction</a></li>
-                    <li><a href="Forestry and Timber.html">Forestry and woodpellets</a></li>
-                    <li><a href="Ceramics & Glass.html">Ceramics & Glasses</a></li>
-                    <li><a href="Industries.html">And Many More..</a></li>
+                    <li><a href="Mining and Quarrying.html">Bergbau Untertage</a></li>
+                    <li><a href="Building & Construction.html">Baustoffe Konstruktion</a></li>
+                    <li><a href="Forestry and Timber.html">ForstwirtschaftHolzpellets</a></li>
+                    <li><a href="Ceramics & Glass.html">Keramiken Gläser</a></li>
+                    <li><a href="Industries.html">viele weitere..</a></li>
                   </ul>
                 </div>
                 </div>
             </div>
             </li>
             <li>
-            <a href="All Products page.html" class="desktop-item">All Products</a>
+            <a href="All Products page.html" class="desktop-item">Alle Produkte</a>
             <input type="checkbox" id="showMega">
             <label for="showMega" class="mobile-item">Mega Menu</label>
             <div class="mega-box">
@@ -716,39 +757,40 @@ html{
                   <img src="img/about1.jpg" alt="">
                 </div>
                 <div class="row">
-                  <header>BULK BAGS</header>
+                  <header>Big Bags</header>
                   <ul class="mega-links">
-                    <li><a href="Standard bulk bags.html">STANDARD BULK BAG</a></li>
-                    <li><a href="Fertilizer bags.html">FERTILIZER BAGS</a></li>
-                    <li><a href="tunnel lift bulk bags.html">TUNNEL LIFT BULK BAGS</a></li>
-                    <li><a href="Top attachement.html">TOP ATTACHMENTS</a></li>
-                    <li><a href="bottom attachement.html">BOTTOM ATTACHMENTS</a></li>
+                    <li><a href="Standard bulk bags.html">Standard Big Bags</a></li>
+                    <li><a href="Fertilizer bags.html">Düngesäcke</a></li>
+                    <li><a href="tunnel lift bulk bags.html">Tunnel-Hebe big Bags</a></li>
+                    <li><a href="Top attachement.html">Oben Zusätze</a></li>
+                    <li><a href="bottom attachement.html">Boden Zusätze</a></li>
                     </ul>
                 </div>
                 <div class="row">
-                  <header>SPECIAL BULK BAGS</header>
+                  <header>besondere Big Bags</header>
                   <ul class="mega-links">
-                    <li><a href="bags and baffle bags.html"> BAFFLE BAGS</a></li>
-                    <li><a href="type D bulk bags.html">TYPE D BAGS</a></li>
-                    <li><a href="type c bulk bags.html">TYPE C BAGS</a></li>
-                    <li><a href="Asbestos bags.html">ASBESTOS BAGS</a></li>
-                    <li><a href="Un approved bags.html">UN APPROVED BAGS</a></li>
+                    <li><a href="bags and baffle bags.html">Formstabil Big Bags</a></li>
+                    <li><a href="type D bulk bags.html">Typ D Big Bags</a></li>
+                    <li><a href="type c bulk bags.html">Typ C Big Bags</a></li>
+                    <li><a href="Asbestos bags.html">Big Bags Asbest</a></li>
+                    <li><a href="Un approved bags.html">UN zertifiziert Big Bags</a></li>
               </ul>
                 </div>
                 <div class="row">
-                  <header>SMALL BAGS/CONTAINERS</header>
+                  <header>KleineBags/Containers</header>
                   <ul class="mega-links">
                       <li><a href="Containers Liners.html">CONTAINER LINERS</a></li>
-                    <li><a href="top hemmed bulk bags.html">PPWOVEN SACKS</a></li>
-                    <li><a href="Bopp Bulk Bags.html">BOPP BAGS</a></li>
-                    <li><a href="Borrow Bulk Bags.html">BARROW BAGS</a></li>
-                    <li><a href="mesh  Leno Bulk Bags.html"> LENO MESH BULK BAGS</a></li>
+                    <li><a href="top hemmed bulk bags.html">PP gewebt Säcke</a></li>
+                    <li><a href="Bopp Bulk Bags.html">BOPP Big Bags</a></li>
+                    <li><a href="Borrow Bulk Bags.html">Schubkarren Big Bags</a></li>
+                    <li><a href="mesh  Leno Bulk Bags.html">LENO Netzsäcke</a></li>
                  </ul>
                 </div>
              </li>
         
-          <li><a href="#">Brochures</a></li>
-          <li><a href="contact us.html">Contact Us</a></li>
+          <li><a href="#">
+              Broschüren</a></li>
+          <li><a href="contact us.html">Kontaktiere uns</a></li>
         </ul>
         <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
       </div>
@@ -763,11 +805,10 @@ html{
         <!-- home section -->
         <div class="home">
             <div class="content" data-aos="zoom-out-right">
-                <h3>Industries We Deal With Category <span class="changecontent"></span></h3>
-                <p> Conabag international packaging has all the experience from packaging. 
-                    <br>who have been successfully supplying Bulk Bags to many different sectors in the UK, for over 4 years.
-                </p>
-                <a href="index.html" class="btn">Explore Now</a>
+                <h3>Industrien, mit denen wir uns befassen Kategorie Big Bags <span class="changecontent"></span></h3>
+                <p>Conbag verfügt über die gesamte Erfahrung von Conbag.
+                  Die seit über 4 Jahren erfolgreich Schüttgutsäcke an viele verschiedene Branchen im Vereinigten Königreich liefern.</p>
+                <a href="index.html" class="btn">Jetzt Erkunden</a>
             </div>
             <div class="img"  data-aos="zoom-out-left">
                 <img src="./image/background.png" alt="">
@@ -782,13 +823,13 @@ html{
       <section id="gallary"    data-aos="fade-up"
       data-aos-duration="1500">
         <div class="container">
-            <h1>Industries Category</h1>
+            <h1>Industrien Kategorie</h1>
             <div class="row" style="margin-top: 30px;">
                  <div class="col-md-4 py-3 py-md-0">
                     <div class="card">
                         <div class="overlay">
                           <a href="food grade bags.html">
-                            <h3 class="text-center">Food grade</h3></a>
+                            <h3 class="text-center">Lebensmittel Industrie</h3></a>
                          
                         </div>
                         <img src="./img/Front1.jpeg" alt="">
@@ -799,7 +840,7 @@ html{
                     <div class="card">
                         <div class="overlay">
                           <a href="Feed Grade.html">
-                            <h3 class="text-center">Animal Feed Industry</h3></a>
+                            <h3 class="text-center">AFuttermittel Industrie</h3></a>
                           
                         </div>
                         <img src="./img/fron feed.jpg" alt="">
@@ -809,7 +850,7 @@ html{
                     <div class="card">
                         <div class="overlay">
                           <a href="Skip Industry.html">
-                            <h3 class="text-center">Skip Industry</h3></a>
+                            <h3 class="text-center">Abfall Industrie</h3></a>
                     
                         </div>
                         <img src="./image/skip 1.jpg" alt="">
@@ -819,7 +860,7 @@ html{
                     <div class="card">
                         <div class="overlay">
                           <a href="Pharma industry.html">
-                            <h3 class="text-center">Pharma Industry</h3></a>
+                            <h3 class="text-center">Pharma Industrie</h3></a>
                      
                         </div>
                         <img src="./img/pharma.jpeg" alt="">
@@ -829,7 +870,7 @@ html{
                     <div class="card">
                         <div class="overlay">
                           <a href="Mining and Quarrying.html">
-                            <h3 class="text-center">Mining & Quarrying</h3></a>
+                            <h3 class="text-center">Bergbau Untertage</h3></a>
                        
                         </div>
                         <img src="./img/Mining & quarrying 1.jpg" alt="">
@@ -839,7 +880,7 @@ html{
                     <div class="card">
                         <div class="overlay">
                           <a href="Mineral wolle.html">
-                            <h3 class="text-center">Mineral Wool</h3></a>
+                            <h3 class="text-center">Mineral Wolle</h3></a>
                            
                         </div>
                         <img src="./img/Mineral Wolle1.jpg" alt="">
@@ -854,7 +895,7 @@ html{
                     <div class="card">
                         <div class="overlay">
                           <a href="Chemical.html">
-                            <h3 class="text-center">Chemical Industry</h3></a>
+                            <h3 class="text-center">Chemie Industrie</h3></a>
                  
                         </div>
                         <img src="./img/Chemical.jpg" alt="">
@@ -864,7 +905,7 @@ html{
                     <div class="card">
                         <div class="overlay">
                           <a href="land industry.html">
-                            <h3 class="text-center">Earth/sand/Landscaping</h3></a>
+                            <h3 class="text-center">ErdeSand Industrie</h3></a>
                            
                         </div>
                         <img src="./image/landscaping.jpg" alt="">
@@ -873,8 +914,8 @@ html{
                 <div class="col-md-4 py-3 py-md-0">
                     <div class="card">
                         <div class="overlay">
-                          <a href="food grade bags.html">
-                            <h3 class="text-center">Recycling Industry</h3></a>
+                          <a href="rindustry.html">
+                            <h3 class="text-center">Kunststoffrecycling</h3></a>
                            
                         </div>
                         <img src="./img/recycle.jpg" alt="">
@@ -885,8 +926,8 @@ html{
                     <div class="col-md-4 py-3 py-md-0">
                         <div class="card">
                             <div class="overlay">
-                              <a href="food grade bags.html">
-                                <h3 class="text-center">Forestry and Timber</h3></a>
+                              <a href="Forestry and Timber.html">
+                                <h3 class="text-center">ForstwirtschaftHolzpellets</h3></a>
                                
                             </div>
                             <img src="./image/forest timber.png" alt="">
@@ -896,7 +937,7 @@ html{
                         <div class="card">
                             <div class="overlay">
                               <a href="Agriculture.html">
-                                <h3 class="text-center">Agriculture</h3></a>
+                                <h3 class="text-center">Landwirtschaft Saaten</h3></a>
                               
                             </div>
                             <img src="./image/agri3.png" alt="">
@@ -906,7 +947,7 @@ html{
                         <div class="card">
                             <div class="overlay">
                               <a href="Building & Construction.html">
-                                <h3 class="text-center">Building & Construction</h3></a>
+                                <h3 class="text-center">Baustoffe Konstruktion</h3></a>
                              
                             </div>
                             <img src="./image/building.png" alt="">
@@ -916,7 +957,7 @@ html{
                       <div class="card">
                           <div class="overlay">
                             <a href="Roofing Underlay.html">
-                              <h3 class="text-center">Roofing Underlay</h3></a>
+                              <h3 class="text-center">Dachunterlage</h3></a>
                              
                           </div>
                           <img src="./image/roofing p.png" alt="">
@@ -934,7 +975,7 @@ html{
       <!-- about -->
       <div class="container" id="about"    data-aos="fade-up"
       data-aos-duration="1500">
-        <h1>ABOUT US</h1>
+        <h1>ÜBER UNS</h1>
         <br>
         <br>
         <div class="row">
@@ -944,21 +985,11 @@ html{
                 </div>
             </div>
             <div class="col-md-6 py-3 py-md-0">
-                    <p>With Conabag international packaging on your side, transport and storage have been made easy for all your
-                         aggregates. We offer a wide range of products which helps in the transportation and storage of aggregates 
-                         in cost and time-efficient ways.  Conabag international packaging understands the importance of the correct packaging in the Mining and
-                          Quarrying industry. FIBCs are customisable and versatile making them a great solution to keep products
-                           contained and meet industry requirements.
-                           transport and storage have been made easy for all your landscaping material. 
-                           We offer a wide range of products which helps in the transportation and storage of landscaping material in cost 
-                           and time- efficient ways. Due to their versatility bulk bags are commonly used across the landscaping sector. 
-                           They are used for transport and storage for landscaping material.
-                           From animal feed to fertiliser, bulk bags are commonly used across the Agriculture sector. 
-                           Many bulk bags for the Agriculture sector come with various filling,
-                            top closure and discharge options, which is important as often the product inside needs to be kept dry and clean.
-                            We offer a wide range of products which helps in the transportation and storage of construction material in cost and time-efficient ways. </p>                
-
-                <div id="bt"><button>Read More...</button></divr>
+                    <p>
+                      Mit Conbag International Packaging GmbH & Co. KG an Ihrer Seite werden Transport und Lagerung aller Ihrer Zuschlagstoffe vereinfacht. Wir bieten eine breite Produktpalette, die den Transport und die Lagerung von Zuschlagstoffen auf kosten- und zeiteffiziente Weise erleichtert. Conbag ist sich der Bedeutung der richtigen Verpackung in der Bergbau- und Steinbruchindustrie bewusst. FIBCs sind anpassbar und vielseitig, was sie zu einer großartigen Lösung macht, um Produkte die Anforderungen der Industrie zu erfüllen. Transport und Lagerung aller Ihrer Landschaftsbaumaterialien werden vereinfacht. Wir bieten eine breite Produktpalette, die den Transport und die Lagerung von Landschaftsbaumaterialien auf kosten- und zeiteffiziente Weise erleichtert. Aufgrund Ihrer Vielseitigkeit werden Big Bags häufig im gesamten Landschaftsbausektor verwendet. Sie werden für den Transport und die Lagerung von Landschaftsbaumaterialien verwendet. Von Tierfutter bis hin zu Düngemitteln werden Big Bags häufig im gesamten Agrarsektor verwendet. Viele Big Bags für den Agrarsektor werden mit verschiedenen Füll-, Verschluss- und Entleerungsoptionen geliefert, was wichtig ist, da das Produkt im Inneren oft trocken und sauber gehalten werden muss. Wir bieten eine breite Produktpalette, die den Transport und die Lagerung von Baumaterialien auf kosten- und zeiteffiziente Weise erleichtert.
+                     </p>
+                      
+                <div id="bt"><button> mehr lesen...</button></div>
             </div>
         </div>
       </div>
@@ -971,7 +1002,7 @@ html{
       <!-- contact  -->
       <div class="container" id="contact"    data-aos="fade-up"
       data-aos-duration="1500">
-        <h1>CONTACT US</h1>
+        <h1>Kontaktieren Sie uns</h1>
         <div class="row">
             <div class="col-md-4 py-1 py-md-0">
                 <div class="form-group">
@@ -991,17 +1022,26 @@ html{
             
         </div>
         <div class="form-group">
-            <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+            <textarea class="form-control" rows="5" id="comment" placeholder="Nachricht"></textarea>
         </div>
-        <div id="messagebtn"><button>Send Message</button></div>
+        <div id="messagebtn"><button>
+          Nachricht senden</button></div>
       </div>
       <!-- contact end -->
 
+      <section class="deal">
 
+        <div class="content">
+          <div class="image">
+            <img src="img/Conbag signature.png" alt="">
+        </div>
+         
+        </div>
+        </section>
       <!-- footer -->
       <footer id="footer"    data-aos="fade-up"
       data-aos-duration="1500">
-        <h1 class="text-center">Industries</h1>
+        <h1 class="text-center">Industrien</h1>
         <p class="text-center"></p>
         <div class="icons text-center">
             <i class="bx bxl-twitter"></i>
@@ -1011,10 +1051,10 @@ html{
             <i class="bx bxl-instagram"></i>
         </div>
         <div class="copyright text-center">
-            &copy; Copyright <strong>Industries</strong> .All Rights Reserved
+            &copy; Copyright <strong>Industrien</strong>.All Rights Reserved
         </div>
         <div class="credite text-center">
-            Designed By <a href="#"><span> Conabag international packaging</span></a>
+            Designed By <a href="#"><span> Conabag international Verpackung</span></a>
         </div>
       </footer>
       <!-- footer -->

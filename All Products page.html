@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Products</title>
-    <link rel="shortcut icon" type="image" href="./images/conbag-header.png">
+    <link rel="shortcut icon" type="image" href="./img/conlogo.ico">
+  
     
     <!-- bootstrap links -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -299,6 +300,45 @@
   nav input{
     display: none;
   }
+  
+.deal{
+    background:#f3f3f3;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.deal .content{
+    flex:1 1 42rem;
+}
+
+.deal .image{
+    flex:1 1 42rem;
+}
+
+.deal .image img{
+    width: 100%;
+}
+
+.deal .content h3{
+    color:var(--green);
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+}
+
+.deal .content h1{
+    color:var(--black);
+    font-size: 4rem;
+}
+
+.deal .content p{
+    padding:1rem 0;
+    color:var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
 
 nav{
     position:sticky;
@@ -614,9 +654,8 @@ html{
   <div class="header-0">
      
     <a href="index.html" class="logo"><img src="images/conbag-header.png" alt=""; height="90"; width="280"></a>
+    
    
- 
-       
 
       <div class="icons">
           <div id="search-btn" class="fas"></div>
@@ -625,7 +664,8 @@ html{
          
       </div>
       </div>
-         
+
+       
          
       </div>
       
@@ -639,18 +679,18 @@ html{
         
         <ul class="nav-links">
           <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Startseite</a></li>
           <li>
-              <a href="about.html" class="desktop-item">About</a>
+              <a href="about.html" class="desktop-item">Über uns</a>
               <input type="checkbox" id="showDrop">
               <label for="showDrop" class="mobile-item">Dropdown Menu</label>
              
            <ul class="drop-menu">
                         
-                        <li><a href="SERVICES (2).html">Services</a></li>
+                        <li><a href="SERVICES (2).html">Dienstleistungen</a></li>
                         <li><a href="RPP.html">100% RPP</a></li>
-                        <li><a href="sustainability.html">Sustainability</a></li>
-                        <li><a href="circular.html">Circular Economy</a></li>
+                        <li><a href="sustainability.html">Nachhaltigkeit</a></li>
+                        <li><a href="circular.html"> Kreislaufwirtshaft</a></li>
                       </ul>
                  
             </li>
@@ -658,7 +698,7 @@ html{
           
          <li>
           <li>
-            <a href="Industries.html" class="desktop-item">Industries</a>
+            <a href="Industries.html" class="desktop-item">Industrien</a>
             <input type="checkbox" id="showMega">
             <label for="showMega" class="mobile-item">Mega Menu</label>
             <div class="mega-box">
@@ -669,38 +709,38 @@ html{
                 <div class="row">
                 
                   <ul class="mega-links">
-                    <li><a href="food grade bags.html">Food Industry</a></li>
-                    <li><a href="Feed Grade.html">Animal Feed Industry</a></li>
-                    <li><a href="Skip Industry.html">Skip Industry</a></li>
-                    <li><a href="Pharma industry.html">Pharma Industry</a></li>
-                    <li><a href="Roofing Underlay.html">Roofing Underlay</a></li>
+                    <li><a href="food grade bags.html">Lebensmittel Industrie</a></li>
+                    <li><a href="Feed Grade.html">Futtermittel Industrie</a></li>
+                    <li><a href="Skip Industry.html">Abfall Industrie</a></li>
+                    <li><a href="Pharma industry.html">Pharma Industrie</a></li>
+                    <li><a href="Roofing Underlay.html">Dachunterlage</a></li>
                   </ul>
                 </div>
                 <div class="row">
                   
                   <ul class="mega-links">
-                      <li><a href="Chemical.html">Chemical Industry</a></li>
-                      <li><a href="rindustry.html">Plastic Recycling Industry</a></li>
-                      <li><a href="land industry.html"> Earth & Sand Industry</a></li>
-                      <li><a href="Agriculture.html">Agriculture & seeds</a></li>
-                      <li><a href="Mineral wolle.html">Mineral Wolle</a></li>
+                      <li><a href="Chemical.html">Chemie Industrie</a></li>
+                      <li><a href="rindustry.html">Kunststoffrecycling</a></li>
+                      <li><a href="land industry.html">ErdeSand Industrie</a></li>
+                      <li><a href="Agriculture.html">Landwirtschaft Saaten</a></li>
+                      <li><a href="Mineral wolle.html">Mineralwolle</a></li>
                    
                   </ul>
                 </div>
                 <div class="row">
                  <ul class="mega-links">
-                    <li><a href="Mining and Quarrying.html">Mining and Underground</a></li>
-                    <li><a href="Building & Construction.html">Building and Construction</a></li>
-                    <li><a href="Forestry and Timber.html">Forestry and woodpellets</a></li>
-                    <li><a href="Ceramics & Glass.html">Ceramics & Glasses</a></li>
-                    <li><a href="Industries.html">And Many More..</a></li>
+                    <li><a href="Mining and Quarrying.html">Bergbau Untertage</a></li>
+                    <li><a href="Building & Construction.html">Baustoffe Konstruktion</a></li>
+                    <li><a href="Forestry and Timber.html">ForstwirtschaftHolzpellets</a></li>
+                    <li><a href="Ceramics & Glass.html">Keramiken Gläser</a></li>
+                    <li><a href="Industries.html">viele weitere..</a></li>
                   </ul>
                 </div>
                 </div>
             </div>
             </li>
             <li>
-            <a href="All Products page.html" class="desktop-item">All Products</a>
+            <a href="All Products page.html" class="desktop-item">Alle Produkte</a>
             <input type="checkbox" id="showMega">
             <label for="showMega" class="mobile-item">Mega Menu</label>
             <div class="mega-box">
@@ -709,39 +749,40 @@ html{
                   <img src="img/about1.jpg" alt="">
                 </div>
                 <div class="row">
-                  <header>BULK BAGS</header>
+                  <header>Big Bags</header>
                   <ul class="mega-links">
-                    <li><a href="Standard bulk bags.html">STANDARD BULK BAG</a></li>
-                    <li><a href="Fertilizer bags.html">FERTILIZER BAGS</a></li>
-                    <li><a href="tunnel lift bulk bags.html">TUNNEL LIFT BULK BAGS</a></li>
-                    <li><a href="Top attachement.html">TOP ATTACHMENTS</a></li>
-                    <li><a href="bottom attachement.html">BOTTOM ATTACHMENTS</a></li>
+                    <li><a href="Standard bulk bags.html">Standard Big Bags</a></li>
+                    <li><a href="Fertilizer bags.html">Düngesäcke</a></li>
+                    <li><a href="tunnel lift bulk bags.html">Tunnel-Hebe big Bags</a></li>
+                    <li><a href="Top attachement.html">Oben Zusätze</a></li>
+                    <li><a href="bottom attachement.html">Boden Zusätze</a></li>
                     </ul>
                 </div>
                 <div class="row">
-                  <header>SPECIAL BULK BAGS</header>
+                  <header>besondere Big Bags</header>
                   <ul class="mega-links">
-                    <li><a href="bags and baffle bags.html"> BAFFLE BAGS</a></li>
-                    <li><a href="type D bulk bags.html">TYPE D BAGS</a></li>
-                    <li><a href="type c bulk bags.html">TYPE C BAGS</a></li>
-                    <li><a href="Asbestos bags.html">ASBESTOS BAGS</a></li>
-                    <li><a href="Un approved bags.html">UN APPROVED BAGS</a></li>
+                    <li><a href="bags and baffle bags.html">Formstabil Big Bags</a></li>
+                    <li><a href="type D bulk bags.html">Typ D Big Bags</a></li>
+                    <li><a href="type c bulk bags.html">Typ C Big Bags</a></li>
+                    <li><a href="Asbestos bags.html">Big Bags Asbest</a></li>
+                    <li><a href="Un approved bags.html">UN zertifiziert Big Bags</a></li>
               </ul>
                 </div>
                 <div class="row">
-                  <header>SMALL BAGS/CONTAINERS</header>
+                  <header>KleineBags/Containers</header>
                   <ul class="mega-links">
                       <li><a href="Containers Liners.html">CONTAINER LINERS</a></li>
-                    <li><a href="top hemmed bulk bags.html">PPWOVEN SACKS</a></li>
-                    <li><a href="Bopp Bulk Bags.html">BOPP BAGS</a></li>
-                    <li><a href="Borrow Bulk Bags.html">BARROW BAGS</a></li>
-                    <li><a href="mesh  Leno Bulk Bags.html"> LENO MESH BULK BAGS</a></li>
+                    <li><a href="top hemmed bulk bags.html">PP gewebt Säcke</a></li>
+                    <li><a href="Bopp Bulk Bags.html">BOPP Big Bags</a></li>
+                    <li><a href="Borrow Bulk Bags.html">Schubkarren Big Bags</a></li>
+                    <li><a href="mesh  Leno Bulk Bags.html">LENO Netzsäcke</a></li>
                  </ul>
                 </div>
              </li>
         
-          <li><a href="#">Brochures</a></li>
-          <li><a href="contact us.html">Contact Us</a></li>
+          <li><a href="#">
+              Broschüren</a></li>
+          <li><a href="contact us.html">Kontaktiere uns</a></li>
         </ul>
         <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
       </div>
@@ -756,11 +797,11 @@ html{
         <!-- home section -->
         <div class="home">
             <div class="content" data-aos="zoom-out-right">
-                <h3>Products We Deal With Category <span class="changecontent"></span></h3>
-                <p>Conbag has all the experience from Conbag. 
-                    <br>who have been successfully supplying Bulk Bags to many different sectors in the UK, for over 4 years.
-                </p>
-                <a href="index.html" class="btn">Explore Now</a>
+                <h3>Produkte, mit denen wir uns befassen Kategorie Big Bags <span class="changecontent"></span></h3>
+                <p>Conbag verfügt über die gesamte Erfahrung von Conbag.
+                  Die seit über 4 Jahren erfolgreich Schüttgutsäcke an viele verschiedene Branchen im Vereinigten Königreich liefern.
+                  </p>
+                <a href="index.html" class="btn">Jetzt Erkunden</a>
             </div>
             <div class="img"  data-aos="zoom-out-left">
                 <img src="./image/background.png" alt="">
@@ -775,13 +816,13 @@ html{
       <section id="gallary"    data-aos="fade-up"
       data-aos-duration="1500">
         <div class="container">
-            <h1>Products Categories</h1>
+            <h1>PRODUKTKATEGORIEN</h1>
             <div class="row" style="margin-top: 30px;">
                  <div class="col-md-4 py-3 py-md-0">
                     <div class="card">
                         <div class="overlay">
                           <a href="bags and baffle bags.html">
-                            <h3 class="text-center">Baffle Bags</h3></a>
+                            <h3 class="text-center">Formstabil Big Bags</h3></a>
                         </div>
                         <img src="./image/baffleM.png" alt="">
                     </div>
@@ -791,7 +832,7 @@ html{
                     <div class="card">
                         <div class="overlay">
                           <a href="Fertilizer bags.html">
-                            <h3 class="text-center">Fertilizer Bags</h3></a>
+                            <h3 class="text-center">Düngermittel Big Bags</h3></a>
                             
                         </div>
                         <img src="./img/ferti1.webp " alt="">
@@ -801,7 +842,7 @@ html{
                     <div class="card">
                         <div class="overlay">
                           <a href="tunnel lift bulk bags.html">
-                            <h3 class="text-center">Tunnel Lift Bags</h3></a>
+                            <h3 class="text-center">Tunnel-Hebesäcke</h3></a>
                           
                         </div>
                         <img src="./img/tunne.jpg" alt="">
@@ -812,7 +853,7 @@ html{
                     <div class="card">
                         <div class="overlay">
                           <a href="Top attachement.html">
-                            <h3 class="text-center">Top Attachment</h3></a>
+                            <h3 class="text-center">Oberer Aufsatz</h3></a>
                          
                         </div>
                         <img src="./img/bulk-bag-filler.jpg" alt="">
@@ -822,7 +863,7 @@ html{
                     <div class="card">
                         <div class="overlay">
                           <a href="bottom attachement.html">
-                            <h3 class="text-center">Bottam Attachment</h3></a>
+                            <h3 class="text-center">Unterer Aufsatz</h3></a>
                            
                         </div>
                         <img src="./img/bottam.jpg" alt="">
@@ -832,18 +873,18 @@ html{
                     <div class="card">
                         <div class="overlay">
                           <a href="ultra sonic Hemmed bags.html">
-                            <h3 class="text-center">Small Bags</h3></a>
+                            <h3 class="text-center">Kleine Bags</h3></a>
                            
                         </div>
                         <img src="./img/ppM.webp" alt="">
                     </div>
                 </div>
-          
+    
                 <div class="col-md-4 py-3 py-md-0">
                   <div class="card">
                       <div class="overlay">
                         <a href="https://www.conbag.de/big-bags/mineralwolle-big-bags/containerbags-mineralwolle/">
-                          <h3 class="text-center">Containers Bags</h3></a>
+                          <h3 class="text-center">Container Bags</h3></a>
                       </div>
                       <img src="./img/continer linera.png" alt="">
                   </div>
@@ -852,7 +893,7 @@ html{
                   <div class="card">
                       <div class="overlay">
                         <a href="type D bulk bags.html">
-                          <h3 class="text-center">Type D Bags</h3></a>
+                          <h3 class="text-center">Bags Vom Typ D</h3></a>
                        
                       </div>
                       <img src="./img/type d 2.jpg" alt="">
@@ -862,7 +903,7 @@ html{
                   <div class="card">
                       <div class="overlay">
                         <a href="type c bulk bags.html">
-                          <h3 class="text-center">Type C Bags</h3></a>
+                          <h3 class="text-center">Typ C Bags</h3></a>
                         
                       </div>
                       <img src="./img/type c 2.jpg" alt="">
@@ -872,7 +913,7 @@ html{
                 <div class="card">
                     <div class="overlay">
                       <a href="Asbestos bags.html">
-                        <h3 class="text-center">Asbestos Bags</h3></a>
+                        <h3 class="text-center">Asbestsäcke</h3></a>
                       
                     </div>
                     <img src="./img/Asbestos bags.jpg" alt="">
@@ -882,7 +923,7 @@ html{
                 <div class="card">
                     <div class="overlay">
                       <a href="top hemmed bulk bags.html">
-                        <h3 class="text-center">PPWoven Sacks</h3></a>
+                        <h3 class="text-center">PPGewebte Säcke</h3></a>
                      
                     </div>
                     <img src="./img/top hemmed 4.jpg " alt="">
@@ -892,7 +933,7 @@ html{
                 <div class="card">
                     <div class="overlay">
                       <a href="Bopp Bulk Bags.html">
-                        <h3 class="text-center">BOPP Bags</h3></a>
+                        <h3 class="text-center">	BOPP- bags</h3></a>
                       
                     </div>
                     <img src="./img/Bopp1.jpg" alt="">
@@ -902,7 +943,7 @@ html{
               <div class="card">
                   <div class="overlay">
                     <a href="Standard bulk bags.html">
-                      <h3 class="text-center">Standard Bulk Bags</h3></a>
+                      <h3 class="text-center">Standard-Big Bags</h3></a>
                  
                   </div>
                   <img src="./img/std bags.jpg" alt="">
@@ -912,7 +953,7 @@ html{
               <div class="card">
                   <div class="overlay">
                     <a href="Un approved bags.html">
-                      <h3 class="text-center">UN Approved Bags</h3></a>
+                      <h3 class="text-center">UN-Zugelassene Bags</h3></a>
                    
                   </div>
                   <img src="./img/typeD1.jpg " alt="">
@@ -922,7 +963,7 @@ html{
               <div class="card">
                   <div class="overlay">
                     <a href="mesh  Leno Bulk Bags.html">
-                      <h3 class="text-center">Leno Mesh Bags/Net Bags</h3></a>
+                      <h3 class="text-center">Leno-Netzsäcke</h3></a>
                    
                   </div>
                   <img src="./img/leno2.jpg" alt="">
@@ -933,7 +974,7 @@ html{
               <div class="card">
                   <div class="overlay">
                     <a href="Borrow Bulk Bags.html">
-                      <h3 class="text-center">Barrow Bags</h3></a>
+                      <h3 class="text-center">	Barrow Bags</h3></a>
                    
                   </div>
                   <img src="./img/barrow bags 2.jpg" alt="">
@@ -943,7 +984,8 @@ html{
               <div class="card">
                   <div class="overlay">
                     <a href="Easy Box.html">
-                      <h3 class="text-center">Easy box</h3></a>
+                      <h3 class="text-center">Einfache Box
+                        </h3></a>
                  
                         </div>
                         <img src="./img/easy box.jpg" alt="">
@@ -953,7 +995,7 @@ html{
               <div class="card">
                   <div class="overlay">
                     <a href="Roofing Underlay.html">
-                      <h3 class="text-center">Roofing Underlay</h3></a>
+                      <h3 class="text-center">Dachunterlage</h3></a>
                    
                         </div>
                         <img src="./image/roofing p.png" alt="">
@@ -976,7 +1018,7 @@ html{
       <!-- about -->
       <div class="container" id="about"    data-aos="fade-up"
       data-aos-duration="1500">
-        <h1>ABOUT US</h1>
+      <h1>ÜBER UNS</h1>
         <br>
         <br>
         <div class="row">
@@ -986,21 +1028,11 @@ html{
                 </div>
             </div>
             <div class="col-md-6 py-3 py-md-0">
-                    <p>With Conbag on your side, transport and storage have been made easy for all your
-                         aggregates. We offer a wide range of products which helps in the transportation and storage of aggregates 
-                         in cost and time-efficient ways. Conbag understands the importance of the correct packaging in the Mining and
-                          Quarrying industry. FIBCs are customisable and versatile making them a great solution to keep products
-                           contained and meet industry requirements.
-                           transport and storage have been made easy for all your landscaping material. 
-                           We offer a wide range of products which helps in the transportation and storage of landscaping material in cost 
-                           and time- efficient ways. Due to their versatility bulk bags are commonly used across the landscaping sector. 
-                           They are used for transport and storage for landscaping material.
-                           From animal feed to fertiliser, bulk bags are commonly used across the Agriculture sector. 
-                           Many bulk bags for the Agriculture sector come with various filling,
-                            top closure and discharge options, which is important as often the product inside needs to be kept dry and clean.
-                            We offer a wide range of products which helps in the transportation and storage of construction material in cost and time-efficient ways. </p>                
-
-                <div id="bt"><button>Read More...</button></divr>
+              <p>
+                Mit Conbag International Packaging GmbH & Co. KG an Ihrer Seite werden Transport und Lagerung aller Ihrer Zuschlagstoffe vereinfacht. Wir bieten eine breite Produktpalette, die den Transport und die Lagerung von Zuschlagstoffen auf kosten- und zeiteffiziente Weise erleichtert. Conbag ist sich der Bedeutung der richtigen Verpackung in der Bergbau- und Steinbruchindustrie bewusst. FIBCs sind anpassbar und vielseitig, was sie zu einer großartigen Lösung macht, um Produkte die Anforderungen der Industrie zu erfüllen. Transport und Lagerung aller Ihrer Landschaftsbaumaterialien werden vereinfacht. Wir bieten eine breite Produktpalette, die den Transport und die Lagerung von Landschaftsbaumaterialien auf kosten- und zeiteffiziente Weise erleichtert. Aufgrund Ihrer Vielseitigkeit werden Big Bags häufig im gesamten Landschaftsbausektor verwendet. Sie werden für den Transport und die Lagerung von Landschaftsbaumaterialien verwendet. Von Tierfutter bis hin zu Düngemitteln werden Big Bags häufig im gesamten Agrarsektor verwendet. Viele Big Bags für den Agrarsektor werden mit verschiedenen Füll-, Verschluss- und Entleerungsoptionen geliefert, was wichtig ist, da das Produkt im Inneren oft trocken und sauber gehalten werden muss. Wir bieten eine breite Produktpalette, die den Transport und die Lagerung von Baumaterialien auf kosten- und zeiteffiziente Weise erleichtert.
+               </p>
+                
+          <div id="bt"><button> mehr lesen...</button></div>
             </div>
         </div>
       </div>
@@ -1010,10 +1042,11 @@ html{
      <br>
      <br>
 
+     
       <!-- contact  -->
       <div class="container" id="contact"    data-aos="fade-up"
       data-aos-duration="1500">
-        <h1>CONTACT US</h1>
+        <h1>Kontaktieren Sie uns</h1>
         <div class="row">
             <div class="col-md-4 py-1 py-md-0">
                 <div class="form-group">
@@ -1033,17 +1066,27 @@ html{
             
         </div>
         <div class="form-group">
-            <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+            <textarea class="form-control" rows="5" id="comment" placeholder="Nachricht"></textarea>
         </div>
-        <div id="messagebtn"><button>Send Message</button></div>
+        <div id="messagebtn"><button>
+          Nachricht senden</button></div>
       </div>
       <!-- contact end -->
+      <section class="deal">
 
+        <div class="content">
+          <div class="image">
+            <img src="img/Conbag signature.png" alt="">
+        </div>
+         
+        </div>
+        </section>
 
       <!-- footer -->
       <footer id="footer"    data-aos="fade-up"
       data-aos-duration="1500">
-        <h1 class="text-center">Industries</h1>
+        <h1 class="text-center">
+          Alle Produkte</h1>
         <p class="text-center"></p>
         <div class="icons text-center">
             <i class="bx bxl-twitter"></i>
@@ -1053,7 +1096,8 @@ html{
             <i class="bx bxl-instagram"></i>
         </div>
         <div class="copyright text-center">
-            &copy; Copyright <strong>All Products</strong> .All Rights Reserved
+            &copy; Copyright <strong>
+              Alle Produkte</strong> .All Rights Reserved
         </div>
         <div class="credite text-center">
             Designed By <a href="#"><span>2025 Conbag International Packaging GmbH & Co of Germany</span></a>

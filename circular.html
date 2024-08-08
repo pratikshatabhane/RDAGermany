@@ -318,6 +318,44 @@ nav input{
 
 
 
+.deal{
+    background:#f3f3f3;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.deal .content{
+    flex:1 1 42rem;
+}
+
+.deal .image{
+    flex:1 1 42rem;
+}
+
+.deal .image img{
+    width: 100%;
+}
+
+.deal .content h3{
+    color:var(--green);
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+}
+
+.deal .content h1{
+    color:var(--black);
+    font-size: 4rem;
+}
+
+.deal .content p{
+    padding:1rem 0;
+    color:var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
 
 
 nav{
@@ -850,7 +888,16 @@ html{
         <div id="messagebtn"><button>Nachricht senden</button></div>
       </div>
       <!-- contact end -->
+       
+      <section class="deal">
 
+        <div class="content">
+          <div class="image">
+            <img src="img/Conbag signature.png" alt="">
+        </div>
+         
+        </div>
+        </section>
 
       <!-- footer -->
       <footer id="footer"    data-aos="fade-up"
