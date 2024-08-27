@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        *{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  
+}
+
+nav{
+    position:sticky;
+    z-index: 99;
+    width: 100%;
+   background: #101111fc;
+  }
+  nav .wrapper{
+    position: sticky;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+  }
+  
+  .wrapper .nav-links{
+    display: inline-flex;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  nav input{
+    display: none;
+  }
+
+.logo h3{
+    font-size: 30px;
+    font-weight: bold;
+   
+}
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+        
+    }
+}
+
+
+.services-section{
+  background: url(bg.jpg);
+  background-size: cover;
+  padding: 60px 0;
+  opacity: 2221;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.section-title{
+  text-align: center;
+  color: #0fa60a;
+  
+  font-size: 30px;
+}
+.border{
+  width: 160px;
+  height: 2px;
+  background: #0fa60a;
+  margin: 40px auto;
+}
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box{
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #ebf1eb;
+  cursor: pointer;
+}
+
+.service-icon{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: #0fa60a;
+  color:#0fa60a;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+}
+.service-icon i{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+.service-box:hover .service-icon{
+  background: #0fa60a;
+  color: #ddd;
+}
+.service-title{
+  font-size: 18px;
+  
+  margin-bottom: 10px;
+}
+.service-desc{
+  font-size: 14px;
+}
+
+@media screen and (max-width:960px) {
+  .service-box{
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .service-box{
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .service-box{
+    max-width: 100%;
+  }
+}
+
+
+
+    </style>
+    
+</head>
+<body>
+    
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+  <div class="header-0">
+     
+    <a href="index.html" class="logo"><img src="images/conbag-header.png" alt=""; height="90"; width="280"></a>
+    
+   
+    <div class="header-1">
+          <a href="https://www.conbag.de/"  class="btn"><i class="fa fa-shopping-basket" aria-hidden="true">OnlineShop</i></a>
+       
+       
+
+      <div class="icons">
+          <div id="search-btn" class="fas"></div>
+
+          <div id="login-btn" class="fas fa-user"></div>
+         
+      </div>
+      </div>
+
+       
+         
+      </div>
+      
+  </div>
+  
+</div>
+ <div class="header-2">
+      <nav>
+      <div class="wrapper">
+       
+        
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+          <li><a href="index.html">Startseite</a></li>
+          <li>
+              <a href="about.html" class="desktop-item">Über uns</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+             
+           <ul class="drop-menu">
+                        
+                        <li><a href="SERVICES (2).html">Dienstleistungen</a></li>
+                        <li><a href="RPP.html">100% RPP</a></li>
+                        <li><a href="sustainability.html">Nachhaltigkeit</a></li>
+                        <li><a href="circular.html"> Kreislaufwirtshaft</a></li>
+                      </ul>
+                 
+            </li>
+          
+          
+         <li>
+          <li>
+            <a href="Industries.html" class="desktop-item">Industrien</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Mega Menu</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="img/all indus.png" alt="">
+                </div>
+                <div class="row">
+                
+                  <ul class="mega-links">
+                    <li><a href="food grade bags.html">LebensmittelIndustrie</a></li>
+                    <li><a href="Feed Grade.html">FuttermittelIndustrie</a></li>
+                    <li><a href="Skip Industry.html">AbfallIindustrie</a></li>
+                    <li><a href="Pharma industry.html">Pharmaindustrie</a></li>
+                   
+                  </ul>
+                </div>
+                <div class="row">
+                  
+                  <ul class="mega-links">
+                      <li><a href="Chemical.html">Chemieindustrie</a></li>
+                      <li><a href="rindustry.html">Kunststoffrecycling</a></li>
+                      <li><a href="land industry.html">Erde Sand</a></li>
+                      <li><a href="Agriculture.html">Landwirtschaft</a></li>
+                      <li><a href="Mineral wolle.html">Mineralwolle</a></li>
+                   
+                  </ul>
+                </div>
+                <div class="row">
+                 <ul class="mega-links">
+                    <li><a href="Mining and Quarrying.html">Bergbau/Untertage</a></li>
+                    <li><a href="Building & Construction.html">Bauwesen</a></li>
+                    <li><a href="Forestry and Timber.html">Forstwirtschaft und Holz</a></li>
+                    <li><a href="Ceramics & Glass.html">Keramik-/Glasindustrie</a></li>
+                    <li><a href="Industries.html">viele weitere..</a></li>
+                  </ul>
+                </div>
+                </div>
+            </div>
+            </li>
+            <li>
+            <a href="All Products page.html" class="desktop-item">Alle Produkte</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Mega Menu</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="img/about1.jpg" alt="">
+                </div>
+                <div class="row">
+                  <header>Big Bags</header>
+                  <ul class="mega-links">
+                    <li><a href="Standard bulk bags.html">Standard Big Bags</a></li>
+                    <li><a href="Fertilizer bags.html">Düngemittelbags</a></li>
+                    <li><a href="tunnel lift bulk bags.html">Tunnel-loop Big Bags</a></li>
+                    <li><a href="Top attachement.html">Konstruktionen Oberseite</a></li>
+                    <li><a href="bottom attachement.html">Bodenkonstruktionen</a></li>
+                    <li><a href="Safty tools Page.html">Sicherheitswerkzeuge</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                  <header>besondere Big Bags</header>
+                  <ul class="mega-links">
+                    <li><a href="bags and baffle bags.html">Formstabil Big Bags</a></li>
+                    <li><a href="type D bulk bags.html">Typ D Big Bags</a></li>
+                    <li><a href="type c bulk bags.html">Typ C Big Bags</a></li>
+                    <li><a href="Asbestos bags.html">Big Bags für Asbest</a></li>
+                    <li><a href="Un approved bags.html"> UN zertifiziert Big Bags</a></li>
+                    <li><a href="tarpaulin page.html">Planenseite</a></li>
+              </ul>
+                </div>
+                <div class="row">
+                  <header>SmallBags/Containers</header>
+                  <ul class="mega-links">
+                      <li><a href="Containers Liners.html">Conatiners liners</a></li>
+                    <li><a href="top hemmed bulk bags.html">Flachsäcke</a></li>
+                    <li><a href="Bopp Bulk Bags.html">BOPP Big Bags</a></li>
+                    <li><a href="Borrow Bulk Bags.html"> Schüttgut Big Bags</a></li>
+                    <li><a href="mesh  Leno Bulk Bags.html">LENO Netzsäcke</a></li>
+                    <li><a href="Container Page.html">Containers</a></li>
+                 </ul>
+                </div>
+             </li>
+        
+          <li><a href="#">
+              Broschüren</a></li>
+          <li><a href="contact us.html">Kontaktiere uns</a></li>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+      </div>
+    </nav>
+  </div>
+
+  
+</header>
+
+<!-- header section ends -->
+
+
+
+
+<!-- login form  -->
+
+<div class="login-form-container">
+
+  <div id="close-login-btn" class="fas fa-times"></div>
+
+  <form action="">
+      <h3>Anmelden</h3>
+      <span>Benutzername</span>
+      <input type="email" name="" class="box" placeholder="eben Sie Ihre E-Mail ein" id="">
+      <span>Passwort </span>
+      <input type="password" name="" class="box" placeholder="Geben Sie Ihr Passwort ein" id="">
+      <div class="checkbox">
+          <input type="checkbox" name="" id="remember-me">
+          <label for="remember-me">erinnere dich an mich</label>
+      </div>
+      <input type="submit" value="Anmelden" class="btn">
+      <p>Passwort vergessen ? <a href="#">Klicken Sie hier</a></p>
+      <p>Sie Haben Noch Kein Konto? <a href="#">Erstellen Sie Eins </a></p>
+  </form>
+
+</div>
+
+<div class="services-section">
+    <div class="inner-width">
+      <h1 class="section-title">Unsere Dienstleistungen</h1>
+      <div class="border"></div>
+      <div class="services-container">
+
+ <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-hotel"></i>
+          </div>
+          <div class="service-title">Herstellung
+ </div>
+          <div class="service-desc">
+            Conbag International Packaging nutzt mehrere Produktionsstätten in Indien, die jeweils über ein gültiges Zertifikat für die Herstellung von Big Bags vom Indian Institute of Packaging, 
+            Cotecna in Indien, Labordata in Deutschland und mehreren anderen international anerkannten Prüfzentren verfügen. 
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-cubes"></i>
+          </div>
+          <div class="service-title">Lieferung</div>
+          <div class="service-desc">
+            ConBag International Packaging  utilise a number of manufacturing facilities in India. Each of which holds a valid certificate for the manufacture of bulk bags from the Indian
+                   Institute of Packaging, Cotecna in India, Labordata in Germany and several other internationally recognised test houses.
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <div class="service-title">Partnergesellschaft</div>
+          <div class="service-desc">
+            Conbag International Packaging arbeitet eng mit seinen Spediteuren zusammen, um einen hervorragenden Lieferservice aufrechtzuerhalten,
+             der es uns ermöglicht, weltweit Lieferungen anzubieten.
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-globe-asia"></i>
+          </div>
+          <div class="service-title">Weltweit</div>
+          <div class="service-desc">
+            Mit unserem flexiblen System und unserer hervorragenden Lieferkette sind wir in der Lage, den Verpackungsbedarf weltweit zu decken.
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-truck"></i>
+          </div>
+          <div class="service-title">schnellste Lieferung</div>
+          <div class="service-desc">
+            Mit unserem Netzwerk an verschiedenen Lagermöglichkeiten können wir Sie im Vergleich zu dem, was auf dem Markt erhältlich ist, auf schnellstem Wege mit Waren beliefern.
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-sitemap"></i>
+          </div>
+          <div class="service-title">Forschung & Entwicklung</div>
+          <div class="service-desc">
+            operiert von dem Büro in Dietzhölztal aus. Es umfasst Aktivitäten wie Transport, Lagerhaltung und Logistik.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
+<br>
+
+  
+ <!-- reviews section starts  -->
+
+ <section class="reviews" id="reviews">
+
+  <h1 class="heading"> <span>Einrichtungen und Partnerschaften</span> </h1>
+
+  <div class="swiper reviews-slider">
+
+      <div class="swiper-wrapper">
+
+          <div class="swiper-slide box">
+          <div class="card">
+              <i class="fas fa-hotel"></i>
+              <div class="card-body">
+              <h3>Herstellung</h3>
+              <p>Conbag International Packaging nutzt mehrere Produktionsstätten in Indien, die jeweils über ein gültiges Zertifikat für die Herstellung von Big Bags vom Indian Institute of Packaging, Cotecna in Indien, Labordata
+                   in Deutschland und mehreren anderen international anerkannten Prüfzentren verfügen.</p>
+             
+          </div>
+
+          </div>
+      </div>
+
+          <div class="swiper-slide box">
+              <div class="card">
+                  <i class="fas fa-cubes"></i>
+                  <div class="card-body">
+              <h3>Vertrieb und Lieferung</h3>
+              <p>Conbag International Packaging ist von Büros in Frankfurt, Deutschland, und Indore, Indien, 
+                  aus tätig und vertreibt über Lagerstätten in Dietzhölztal, Deutschland. Cotecna in Indien, Labordata
+                  in Deutschland und mehreren anderen international anerkannten Prüfzentren verfügen Big Bags vom of Packaging</p>
+              </div>
+
+          </div>
+          </div>
+
+          <div class="swiper-slide box">
+              <div class="card">
+                  <i class="fas fa-handshake"></i>
+                  <div class="card-body">
+              <h3>Verbundene Partnerfirma</h3>
+              <p>Conbag International Packaging arbeitet eng mit seinen Spediteuren zusammen, um einen hervorragenden Lieferservice aufrechtzuerhalten, 
+                  der es uns ermöglicht, weltweit Lieferungen anzubieten,Big Bags vom of Packaging</p>
+      
+              </div>
+
+          </div>
+          </div>
+    </div>
+    </div>
+  
+          
+  
+</section>
+
+
+
+<!-- reviews section ends -->
+
+
+
+<section class="deal">
+
+  <div class="content">
+    <div class="image">
+      <img src="img/Conbag signature.png" alt="">
+  </div>
+   
+  </div>
+  </section>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+        <a href="index.html" class="logo"><img src="images/conbag-header.png" alt=""; height="90"; width="280"></a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i>  Hauptstrasse 79, 35716 Dietzhölztal, Germany, Germany  </a>
+      <a href="#"> <i class="fas fa-clock"></i>14.	Working : Mon-Thursday (8:00-16:30) Fri (08:00- 15:00) - Arbeitszeiten : 
+        Montag- Donnerstag ( 08:00 - 16:30 ) Freitag (08:00 - 15:00) </a>
+      
+          
+      </div>
+
+      <div class="box">
+          <h3>Über uns Us</h3>
+          <a href="index.html"> <i class="fas fa-arrow-right"></i>Startseite</a>
+          <a href="about.html"> <i class="fas fa-arrow-right"></i>Über uns</a>
+          <a href="SERVICES (2).html"> <i class="fas fa-arrow-right"></i>Leistungen</a>
+          <a href="contact us.html"> <i class="fas fa-arrow-right"></i>Kontakt</a>
+      </div>
+
+      <div class="box">
+          <h3>Unternehmen</h3>
+         
+          <a href="#"> <i class="fas fa-arrow-right"></i>Daten¬schutz¬erklärung</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i>Cookie- richtlinie</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i>Brochüren</a>
+         
+          <a href="https://www.conbag.de/faq/"> <i class="fas fa-arrow-right"></i> FAQ's </a>
+ 
+
+</div>
+<div class="box">
+          <h3>Kontaktiere Uns</h3>
+          <a href="contact us.html"> <i class="fas fa-phone"></i> Tel: +49(0)2774-92424-0</a>
+    
+          <a href="contact us.html"> <i class="fas fa-envelope"></i> Email:   info@conbag.de</a>
+    <a href="contact us.html">  Registernummer :  HRA 7771</a>
+          
+      
+  </div>
+
+
+  <div class="share">
+         <a href="https://www.linkedin.com/company/69201484/admin/feed/posts/" class="fab fa-linkedin"></a>
+      <a href="https://www.facebook.com/ConbagBulkPackagingLtd/" class="fab fa-facebook-f"></a>
+      <a href="https://twitter.com/RdaLtd" class="fab fa-twitter"></a>
+      <a href="https://www.instagram.com/rdabulkpackaging/?next=%2F" class="fab fa-instagram"></a>
+
+   
+  </div>
+</div>
+  <div class="credit"> Created by <span>  Erstellt von 2025 Conbag International Packaging GmbH & Co. aus Deutschland </span>| alle Rechte vorbehalten!</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="main.js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+	
+		:root{
+			--green:#101111fc;
+			--dark-color:rgb(33, 145, 80)35
+			--black:#444;
+			--light-color:#666;
+			--border:.1rem solid rgba(0,0,0,.1);
+			--border-hover:.1rem solid var(--black);
+			--box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+		}
+		
+		*{
+			font-family: 'Poppins', sans-serif;
+			margin:0; padding:0;
+			box-sizing: border-box;
+			outline: none; border:none;
+			text-decoration: none;
+			text-transform: capitalize;
+			transition:all .2s linear;
+			transition:width none;
+		}
+		
+		
+		
+		.card {
+			background-color: #f5f5f5;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			justify-content: space-around; /* Adjust the spacing between cards */
+			margin: 20px;
+			max-width: 300px;
+			padding: 20px;
+			text-align: center;
+			transition: transform 0.2s ease-in-out;
+		}
+		
+		.card img {
+			max-width:150%;
+			height: 390px;
+			border-radius: 10px;
+			justify-content: space-between;
+		}
+		
+		.card-content {
+			padding: 20px;
+		}
+		
+		.card h2 {
+			font-size: 24px;
+			margin: 0;
+		}
+		
+		.card p {
+			font-size: 16px;
+		}
+		
+		.card a {
+			display: inline-block;
+			margin-top: 10px;
+			padding: 10px 20px;
+			background-color: #007BFF;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+			font-weight: bold;
+		}
+		
+		.card a:hover {
+			background-color: #0056b3;
+		}
+		
+		.video-container {
+			display: flex;
+			flex-direction: row;
+			align-items:center;
+			margin: 10px;
+		}
+		
+		video {
+			max-width: 30%;
+			margin-right: 20px;
+		}
+		
+		.video-content {
+			flex: 1;
+		}
+		
+		h2 {
+			font-size: 4.5rem;
+			color: #22761a;
+			margin-bottom: 10px;
+		}
+		
+		p {
+			font-size: 1.8rem;
+			color: #666;
+		}
+		
+		html{
+			font-size: 62.5%;
+			overflow-x: hidden;
+			scroll-padding-top: 5rem;
+			scroll-behavior: smooth;
+		}
+		
+		html::-webkit-scrollbar{
+			width:1rem;
+		}
+		
+		html::-webkit-scrollbar-track{
+			background:transparent;
+		}
+		
+		html::-webkit-scrollbar-thumb{
+			background:var(--black);
+		}
+		
+		section{
+			padding:5rem 9%;
+		}
+		
+		.heading{
+			text-align: center;
+			margin-bottom: 2rem;
+			position: relative;
+		}
+		
+		.heading::before{
+			content: '';
+			position: absolute;
+			top:50%; left:0;
+			transform: translateY(-50%);
+			width: 100%;
+			height:.01rem;
+			background: rgba(0,0,0,.1);
+			z-index: -1;
+		}
+		
+		.heading span{
+			font-size: 3rem;
+			padding:.5rem 2rem;
+			color:var(--black);
+			background: #fff;
+			border:var(--border);
+		}
+		
+		
+.btn{
+  margin-top: 1rem;
+  display:inline-block;
+  padding:.9rem 3rem;
+  justify-content: space-between;
+  border-radius: 1.7rem;
+  color:#e2e832;
+  background:var(--green);
+  font-size: 2.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+		
+		.btn:hover{
+			background:var(--dark-color);
+		}
+		.header .header-0{
+			background:#fff;
+			padding:1.5rem 9%;
+			display: flex;
+			align-items:start;
+		   justify-content:space-between;
+		
+		}
+		
+		.navbar {
+			overflow: hidden;
+			background: #101111fc;
+		}
+		.navbar a {
+			float: left;
+			font-size: 14px;
+			color: white;
+			text-align: center;
+			padding: 10px 12px;
+			text-decoration:none;
+			text-transform: uppercase;
+		}
+		.d {
+			float: left;
+			overflow: hidden;
+		}
+		.d .d-btn {
+			font-size: 16px;
+			border: none;
+			outline: none;
+			color: #fff;
+			padding: 10px 12px;
+			background: inherit;
+			text-transform: uppercase;
+		}
+		.navbar a:hover, .d:hover .d-btn {
+			background: #5F5F5F;
+		}
+		.header .header-0 .logo{
+			align-items:start;
+			justify-content:space-between;
+			font-size: 2.5rem;
+			font-weight: bolder;
+			color:var(--black);
+		}
+		
+		.header .header-0 .logo a{
+			align-items:start;
+			justify-content:left;
+			color:var(--green);
+		}
+		
+		.header .header-1{
+			background:#ffffff;
+			padding:1.5rem 9%;
+			display: flex;
+			align-items:center;
+		   justify-content: right;
+		}
+		.header .header-1 .search-form{
+			width:50rem;
+			height:5rem;
+			border:var(--border);
+			overflow: hidden;
+			background:#fff;
+			display:flex;
+			align-items: center;
+			border-radius: .5rem;
+		}
+		
+		.header .header-1 .search-form input{
+			font-size: 1.6rem;
+			padding:0 1.2rem;
+			height:100%;
+			width:100%;
+			text-transform: none;
+			color:var(--black);
+		}
+		
+		.header .header-1 .search-form label{
+			font-size: 2.5rem;
+			padding-right: 1.5rem;
+			color:var(--black);
+			cursor: pointer;
+		}
+		
+		.header .header-1 .search-form label:hover{
+			color:var(--green);
+		}
+		
+		.header .header-1 .icons div,
+		.header .header-1 .icons a{
+			font-size: 2.5rem;
+			margin-left: 1.5rem;
+			color:var(--black);
+			cursor: pointer;
+		}
+		
+		.header .header-1 .icons div:hover,
+		.header .header-1 .icons a:hover{
+			color:var(--green);
+		}
+		
+		#search-btn{
+			display: none;
+		}
+		
+		.header .header-2{
+			background:var(--green);
+		}
+		
+		.header .header-2 .navbar{
+			text-align:center;
+		}
+		
+		
+		.header .header-2 .navbar a{
+			color:#fff;
+			display: inline-block;
+			padding:1.2rem;
+			font-size: 1.7rem;
+		}
+		
+		.header .header-2 .navbar a:hover{
+			background:var(--dark-color);
+		}
+		
+		.header .header-2.active{
+			position:fixed;
+			top:0; left:0; right:0;
+			z-index: 1000;
+		
+		}
+		
+		.bottom-navbar{
+			text-align: center;
+			background:var(--green);
+			position: fixed;
+			bottom:0; left:0; right:0;
+			z-index: 1000;
+			display: none;
+		}
+		
+		.bottom-navbar a{
+			font-size: 2.5rem;
+			padding:2rem;
+			color:#fff;
+		}
+		
+		.bottom-navbar a:hover{
+			background:var(--dark-color);
+		}
+		
+		.login-form-container{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background:rgba(255,255,255,.9);
+			position:fixed;
+			top:0; right:-105%;
+			z-index: 10000;
+			height:100%;
+			width:100%;
+		}
+		
+		.login-form-container.active{
+			right:0;
+		}
+		
+		.login-form-container form{
+			background:#fff;
+			border:var(--border);
+			width:40rem;
+			padding:2rem;
+			box-shadow: var(--box-shadow);
+			border-radius: .5rem;
+			margin:2rem;
+		}
+		
+		.login-form-container form h3{
+			font-size: 2.5rem;
+			text-transform: uppercase;
+			color:var(--black);
+			text-align: center;
+		}
+		
+		.login-form-container form span{
+			display: block;
+			font-size: 1.5rem;
+			padding-top: 1rem;
+		}
+		
+		.login-form-container form .box{
+			width: 100%;
+			margin:.7rem 0;
+			font-size: 1.6rem;
+			border:var(--border);
+			border-radius: .5rem;
+			padding:1rem 1.2rem;
+			color:var(--black);
+			text-transform: none;
+		}
+		
+		.login-form-container form .checkbox{
+			display:flex;
+			align-items: center;
+			gap:.5rem;
+			padding:1rem 0;
+		}
+		
+		.login-form-container form .checkbox label{
+			font-size: 1.5rem;
+			color:var(--light-color);
+			cursor: pointer;
+		}
+		
+		.login-form-container form .btn{
+			text-align: center;
+			width:100%;
+			margin:1.5rem 0;
+		}
+		
+		.login-form-container form p{
+			padding-top: .8rem;
+			color:var(--light-color);
+			font-size: 1.5rem;
+		}
+		
+		.login-form-container form p a{
+			color:var(--green);
+			text-decoration: underline;
+		}
+		
+		.login-form-container #close-login-btn{
+			position: absolute;
+			top:1.5rem; right:2.5rem;
+			font-size: 5rem;
+			color:var(--black);
+			cursor: pointer;
+		}
+		
+		.home{
+			width: 100%;
+			height: 110vh;
+			background: url(img/rec1.jpeg)no-repeat;
+			background-size: cover;
+			opacity:222222;
+			
+		}
+		.home .row{
+			display:flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap:1.5rem;
+		}
+		
+		.home .row .content{
+			flex:1 1 42rem;
+		}
+		
+		.home .row .books-slider{
+			flex:1 1 42rem;
+			text-align: center;
+			margin-top: 2rem;
+		}
+		
+		.home .row .books-slider a img{
+			height: 25rem;
+		}
+		
+		.home .row .books-slider a:hover img{
+			transform: scale(.9);
+		}
+		
+		.home .row .books-slider .stand{
+			width:100%;
+			margin-top: -2rem;
+		}
+		
+		.home .row .content h3{
+			color:#fff;
+		   
+			font-size: 6.2rem;
+			font-weight:bolder;
+			font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			padding:2rem 0;
+		}
+		
+		.home .row .content p{
+			color:#0e0000;
+			background-attachment: var(--box-shadow);
+			font-size: 2.8rem;
+			font-weight: bolder;
+			font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			padding:2rem 0;
+		}
+		
+		.Hcard {
+		   background-color:#abb3ab70;
+			border-radius: 110px;
+			box-shadow: 0px 5px 15px rgba(12, 12, 12, 0.2);
+			justify-content: space-around; /* Adjust the spacing between cards */
+			margin: 2px;
+			max-width: 450px;
+			padding: 50px;
+			text-align:center;
+			transition: transform 0.2s ease-in-out;
+		}
+		
+		nav{
+			position:sticky;
+			z-index: 99;
+			width: 100%;
+			
+			background: #101111fc;
+		  }
+		  nav .wrapper{
+			position: relative;
+			max-width: 1300px;
+			padding: 0px 30px;
+			height: 70px;
+			line-height: 70px;
+			margin: auto;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		  }
+		  
+		  .wrapper .nav-links{
+			display: inline-flex;
+		  }
+		  .nav-links li{
+			list-style: none;
+		  }
+		  .nav-links li a{
+			color: #f2f2f2;
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: 500;
+			padding: 9px 15px;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+		  }
+		  .nav-links li a:hover{
+			background: #3a3b3c50;
+		  }
+		  .nav-links .mobile-item{
+			display: none;
+		  }
+		  .nav-links .drop-menu{
+			position: absolute;
+			background: #24242577;
+			width: 180px;
+			line-height: 45px;
+			top: 85px;
+			opacity: 0;
+			visibility: hidden;
+			box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+		  }
+		  .nav-links li:hover .drop-menu,
+		  .nav-links li:hover .mega-box{
+			transition: all 0.3s ease;
+			top: 70px;
+			opacity: 1;
+			visibility: visible;
+		  }
+		  .drop-menu li a{
+			width: 100%;
+			display: block;
+			padding: 0 0 0 15px;
+			font-weight: 400;
+			border-radius: 0px;
+		  }
+		  .mega-box{
+			position: absolute;
+			left: 0;
+			width: 100%;
+			padding: 0 30px;
+			top: 85px;
+			opacity: 0;
+			visibility: hidden;
+		  }
+		  .mega-box .content{
+			background: #242526cd;
+			padding: 25px 20px;
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+		  }
+		  .mega-box .content .row{
+			width: calc(25% - 30px);
+			line-height: 45px;
+		  }
+		  .content .row img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		  }
+		  .content .row header{
+			color: #f2f2f2;
+			font-size: 20px;
+			font-weight: 500;
+		  }
+		  .content .row .mega-links{
+			margin-left: -40px;
+			border-left: 1px solid rgba(255,255,255,0.09);
+		  }
+		  .row .mega-links li{
+			padding: 0 20px;
+		  }
+		  .row .mega-links li a{
+			padding: 0px;
+			padding: 0 20px;
+			color: #d9d9d9;
+			font-size: 17px;
+			display: block;
+		  }
+		  .row .mega-links li a:hover{
+			color: #f2f2f2;
+		  }
+		  .wrapper .btn{
+			color: #fff;
+			font-size: 20px;
+			cursor: pointer;
+			display: none;
+		  }
+		  .wrapper .btn.close-btn{
+			position: absolute;
+			right: 30px;
+			top: 10px;
+		  }
+		  @media screen and (max-width: 970px) {
+			.wrapper .btn{
+			  display: block;
+			}
+			.wrapper .nav-links{
+			  position: fixed;
+			  height: 100vh;
+			  width: 100%;
+			  max-width: 350px;
+			  top: 0;
+			  left: -100%;
+			  background: #169038;
+			  display: block;
+			  padding: 50px 10px;
+			  line-height: 50px;
+			  overflow-y: auto;
+			  box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
+			  transition: all 0.3s ease;
+			}
+		   
+			#menu-btn:checked ~ .nav-links{
+			  left: 0%;
+			}
+			#menu-btn:checked ~ .btn.menu-btn{
+			  display: none;
+			}
+			#close-btn:checked ~ .btn.menu-btn{
+			  display: block;
+			}
+			.nav-links li{
+			  margin: 15px 10px;
+			}
+			.nav-links li a{
+			  padding: 0 20px;
+			  display: block;
+			  font-size: 20px;
+			}
+			.nav-links .drop-menu{
+			  position: static;
+			  opacity: 1;
+			  top: 65px;
+			  visibility: visible;
+			  padding-left: 20px;
+			  width: 100%;
+			  max-height: 0px;
+			  overflow: hidden;
+			  box-shadow: none;
+			  transition: all 0.3s ease;
+			}
+			#showDrop:checked ~ .drop-menu,
+			#showMega:checked ~ .mega-box{
+			  max-height: 100%;
+			}
+			.nav-links .desktop-item{
+			  display: none;
+			}
+			.nav-links .mobile-item{
+			  display: block;
+			  color: #f2f2f2;
+			  font-size: 20px;
+			  font-weight: 500;
+			  padding-left: 20px;
+			  cursor: pointer;
+			  border-radius: 5px;
+			  transition: all 0.3s ease;
+			}
+			.nav-links .mobile-item:hover{
+			  background: #3A3B3C;
+			}
+			.drop-menu li{
+			  margin: 0;
+			}
+			.drop-menu li a{
+			  border-radius: 5px;
+			  font-size: 18px;
+			}
+			.mega-box{
+			  position: static;
+			  top: 65px;
+			  opacity: 1;
+			  visibility: visible;
+			  padding: 0 20px;
+			  max-height: 0px;
+			  overflow: hidden;
+			  transition: all 0.3s ease;
+			}
+			.mega-box .content{
+			  box-shadow: none;
+			  flex-direction: column;
+			  padding: 20px 20px 0 20px;
+			}
+			.mega-box .content .row{
+			  width: 100%;
+			  margin-bottom: 15px;
+			  border-top: 1px solid rgba(255,255,255,0.08);
+			}
+			.mega-box .content .row:nth-child(1),
+			.mega-box .content .row:nth-child(2){
+			  border-top: 0px;
+			}
+			.content .row .mega-links{
+			  border-left: 0px;
+			  padding-left: 15px;
+			}
+			.row .mega-links li{
+			  margin: 0;
+			}
+			.content .row header{
+			  font-size: 19px;
+			}
+		  }
+		  nav input{
+			display: none;
+		  }
+		  
+		
+		.swiper-button-next,
+		.swiper-button-prev{
+			border:var(--border-hover);
+			height:4rem;
+			width:4rem;
+			color:var(--black);
+			background: #fff;
+		}
+		
+		.swiper-button-next::after,
+		.swiper-button-prev::after{
+			font-size: 2rem;
+		}
+		
+		.swiper-button-next:hover,
+		.swiper-button-prev:hover{
+			background: var(--black);
+			color:#fff;
+		}
+		
+		.newsletter{
+			background:url(images/mainbg.jpeg) no-repeat;
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
+		
+		.newsletter form{
+			max-width: 45rem;
+			margin-left: auto;
+			text-align: center;
+			padding:5rem 0;
+		}
+		
+		.newsletter form h3{
+			font-size: 2.2rem;
+			color:#fff;
+			padding-bottom: .7rem;
+			font-weight: normal;
+		}
+		
+		.newsletter form .box{
+			width: 100%;
+			margin: .7rem 0;
+			padding:1rem 1.2rem;
+			font-size: 1.6rem;
+			color:var(--black);
+			border-radius: .5rem;
+			text-transform: none;
+		}
+		
+		.arrivals .arrivals-slider .box{
+			display: flex;
+			align-items:center;
+			gap:1.5rem;
+			padding:2rem 1rem;
+			border:var(--border);
+			margin:1rem 0;
+		}
+		
+		.arrivals .arrivals-slider .box:hover{
+			border:var(--border-hover);
+		}
+		
+		.arrivals .arrivals-slider .box .image img{
+			height:15rem;
+		}
+		
+		.arrivals .arrivals-slider .box .content h3{
+			font-size: 2rem;
+			color:var(--black);
+		}
+		
+		.arrivals .arrivals-slider .box .content .price{
+			font-size: 2.2rem;
+			color:var(--black);
+			padding-bottom: .5rem;
+		}
+		
+		.arrivals .arrivals-slider .box .content .price span{
+			font-size: 1.5rem;
+			color:var(--light-color);
+			text-decoration: line-through;
+		}
+		
+		.arrivals .arrivals-slider .box .content .stars i{
+			font-size: 1.5rem;
+			color:var(--green);
+		}
+		
+		.deal{
+			background:#f3f3f3;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap:1.5rem;
+		}
+		
+		.deal .content{
+			flex:1 1 42rem;
+		}
+		
+		.deal .image{
+			flex:1 1 42rem;
+		}
+		
+		.deal .image img{
+			width: 100%;
+		}
+		
+		.deal .content h3{
+			color:var(--green);
+			font-size: 2.5rem;
+			padding-bottom: .5rem;
+		}
+		
+		.deal .content h1{
+			color:var(--black);
+			font-size: 4rem;
+		}
+		
+		.deal .content p{
+			padding:1rem 0;
+			color:var(--light-color);
+			font-size: 1.4rem;
+			line-height: 2;
+		}
+		
+		.reviews .reviews-slider .box{
+			border:var(--border);
+			padding:2rem;
+			text-align: center;
+			margin:2rem 0;
+		}
+		
+		.reviews .reviews-slider .box:hover{
+			border:var(--border-hover);
+		}
+		
+		.reviews .reviews-slider .box img{
+			height:7rem;
+			width:7rem;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+		
+		.reviews .reviews-slider .box h3{
+			color:var(--black);
+			font-size: 2.2rem;
+			padding:.5rem 0;
+		}
+		
+		.reviews .reviews-slider .box p{
+			color:var(--light-color);
+			font-size: 1.4rem;
+			padding:1rem 0;
+			line-height: 2;
+		}
+		
+		.reviews .card{
+			box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+			border: none;
+			cursor: pointer;
+		}
+		.reviews .card i{
+			font-size: 50px;
+			text-align: center;
+			color: #22761a;
+			margin-top: 20px;
+		}
+		.reviews .card .card-body h3{
+			font-weight: 600;
+		}
+		.reviews .card .card-body{
+			text-align: center;
+		}
+		
+		.reviews .reviews-slider .box .stars{
+			padding-top: .5rem;
+		}
+		
+		.reviews .reviews-slider .box .stars i{
+			font-size: 1.7rem;
+			color:var(--green);
+		}
+		
+		
+		.footer .box-container{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+			gap:1.5rem;
+		}
+		
+		.footer .box-container .box h3{
+			font-size: 2.2rem;
+			color:var(--black);
+			padding:1rem 0;
+		}
+		
+		.footer .box-container .box a{
+			display: block;
+			font-size: 1.4rem;
+			color:var(--light-color);
+			padding:1rem 0;
+		}
+		
+		.footer .box-container .box a i{
+			color:var(--green);
+			padding-right: .5rem;
+		}
+		
+		.footer .box-container .box a:hover i{
+			padding-right: 2rem;
+		}
+		
+		.footer .box-container .box .map{
+			width:100%;
+		}
+		
+		.footer .share{
+			padding:1rem 0;
+			text-align: center;
+		}
+		
+		.footer .share a{
+			height: 5rem;
+			width: 5rem;
+			line-height: 5rem;
+			font-size: 2rem;
+			color:#fff;
+			background:var(--green);
+			margin:0 .3rem;
+			border-radius: 50%; 
+		}
+		
+		.footer .share a:hover{
+			background:var(--black);
+		}
+		
+		.footer .credit{
+			border-top: var(--border);
+			margin-top: 2rem;
+			padding:0 1rem;
+			padding-top: 2.5rem;
+			font-size: 2rem;
+			color:var(--light-color);
+			text-align: center;
+		}
+		
+		.footer .credit span{
+			color:var(--green);
+		}
+		
+		.loader-container{
+			position: fixed;
+			top:0; left: 0;
+			height:100%;
+			width: 100%;
+			z-index: 10000;
+			background:#f7f7f7;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.loader-container.active{
+			display: none;
+		}
+		
+		.loader-container img{
+			height:10rem;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/* media queries  */
+		
+		@media (max-width:991px){
+		
+			html{
+				font-size: 55%;
+			}
+		
+			.header .header-1{
+				padding:2rem;
+			}
+		
+			section{
+				padding:3rem 2rem;
+			}
+		
+		}
+		
+		@media (max-width:768px){
+		
+			html{
+				scroll-padding-top: 0;
+			}
+		
+			body{
+				padding-bottom: 6rem;
+			}
+		
+			.header .header-2{
+				display:none;
+			}
+		
+			.bottom-navbar{
+				display: block;
+			}
+		
+			#search-btn{
+				display: inline-block;
+				
+			}
+		
+			.header .header-1{
+				box-shadow: var(--box-shadow);
+				position: relative;
+			}
+		
+			.header .header-1 .search-form{
+				position:absolute;
+				top:-115%; right:10rem;
+				width: 90%;
+				box-shadow: var(--box-shadow);
+			}
+		
+			.header .header-1 .search-form.active{
+				top:115%;
+			}
+		
+			.home .row .content{
+				text-align: center;
+			}
+		
+			.home .row .content h3{
+				font-size: 3.5rem;
+			}
+		
+			.newsletter{
+				background-position: right;
+			}
+		
+			.newsletter form{
+				margin-left:0;
+				max-width: 100%;
+			}
+		
+		}
+		
+		@media (max-width:450px){
+		
+			html{
+				font-size: 50%;
+			}
+		
+		}
+		/*----------about us page----------*/
+		.sub-header{
+			height: 50vh;
+			width: 100%;
+		}
+	</style>
+
+    <title>Plastic Recycling Industry</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   
+    
+</head>
+<body>
+    
+   
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div class="header-0">
+       
+      <a href="index.html" class="logo"><img src="images/conbag-header.png" alt=""; height="90"; width="280"></a>
+      
+     
+      <div class="header-1">
+            <a href="https://www.conbag.de/"  class="btn"><i class="fa fa-shopping-basket" aria-hidden="true">OnlineShop</i></a>
+         
+         
+
+        <div class="icons">
+            <div id="search-btn" class="fas"></div>
+
+            <div id="login-btn" class="fas fa-user"></div>
+           
+        </div>
+        </div>
+ 
+         
+           
+        </div>
+        
+    </div>
+    
+</div>
+   <div class="header-2">
+        <nav>
+        <div class="wrapper">
+         
+          
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="index.html">Startseite</a></li>
+            <li>
+                <a href="about.html" class="desktop-item">Über uns</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+               
+             <ul class="drop-menu">
+                          
+                          <li><a href="SERVICES (2).html">Dienstleistungen</a></li>
+                          <li><a href="RPP.html">100% RPP</a></li>
+                          <li><a href="sustainability.html">Nachhaltigkeit</a></li>
+                          <li><a href="circular.html"> Kreislaufwirtshaft</a></li>
+                        </ul>
+                   
+              </li>
+            
+            
+           <li>
+            <li>
+              <a href="Industries.html" class="desktop-item">Industrien</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Mega Menu</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <img src="img/all indus.png" alt="">
+                  </div>
+                  <div class="row">
+                  
+                    <ul class="mega-links">
+                      <li><a href="food grade bags.html">Lebensmittel Industrie</a></li>
+                      <li><a href="Feed Grade.html">Futtermittel Industrie</a></li>
+                      <li><a href="Skip Industry.html">Abfall Industrie</a></li>
+                      <li><a href="Pharma industry.html">Pharma Industrie</a></li>
+                      <li><a href="Roofing Underlay.html">Dachunterlage</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    
+                    <ul class="mega-links">
+                        <li><a href="Chemical.html">Chemie Industrie</a></li>
+                        <li><a href="rindustry.html">Kunststoffrecycling</a></li>
+                        <li><a href="land industry.html">ErdeSand Industrie</a></li>
+                        <li><a href="Agriculture.html">Landwirtschaft Saaten</a></li>
+                        <li><a href="Mineral wolle.html">Mineralwolle</a></li>
+                     
+                    </ul>
+                  </div>
+                  <div class="row">
+                   <ul class="mega-links">
+                      <li><a href="Mining and Quarrying.html">Bergbau Untertage</a></li>
+                      <li><a href="Building & Construction.html">Baustoffe Konstruktion</a></li>
+                      <li><a href="Forestry and Timber.html">ForstwirtschaftHolzpellets</a></li>
+                      <li><a href="Ceramics & Glass.html">Keramiken Gläser</a></li>
+                      <li><a href="Industries.html">viele weitere..</a></li>
+                    </ul>
+                  </div>
+                  </div>
+              </div>
+              </li>
+              <li>
+              <a href="All Products page.html" class="desktop-item">Alle Produkte</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Mega Menu</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <img src="img/about1.jpg" alt="">
+                  </div>
+                  <div class="row">
+                    <header>Big Bags</header>
+                    <ul class="mega-links">
+                      <li><a href="Standard bulk bags.html">Standard Big Bags</a></li>
+                      <li><a href="Fertilizer bags.html">Düngesäcke</a></li>
+                      <li><a href="tunnel lift bulk bags.html">Tunnel-Hebe big Bags</a></li>
+                      <li><a href="Top attachement.html">Oben Zusätze</a></li>
+                      <li><a href="bottom attachement.html">Boden Zusätze</a></li>
+                      <li><a href="Safty tools Page.html">Sicherheitswerkzeuge</a></li>
+                      </ul>
+                  </div>
+                  <div class="row">
+                    <header>besondere Big Bags</header>
+                    <ul class="mega-links">
+                      <li><a href="bags and baffle bags.html">Formstabil Big Bags</a></li>
+                      <li><a href="type D bulk bags.html">Typ D Big Bags</a></li>
+                      <li><a href="type c bulk bags.html">Typ C Big Bags</a></li>
+                      <li><a href="Asbestos bags.html">Big Bags Asbest</a></li>
+                      <li><a href="Un approved bags.html">UN zertifiziert Big Bags</a></li>
+                      <li><a href="tarpaulin page.html">Planenseite</a></li>
+                </ul>
+                  </div>
+                  <div class="row">
+                    <header>KleineBags/Containers</header>
+                    <ul class="mega-links">
+                        <li><a href="Containers Liners.html">Conatiners liners</a></li>
+                      <li><a href="top hemmed bulk bags.html">PP gewebt Säcke</a></li>
+                      <li><a href="Bopp Bulk Bags.html">BOPP Big Bags</a></li>
+                      <li><a href="Borrow Bulk Bags.html">Schubkarren Big Bags</a></li>
+                      <li><a href="mesh  Leno Bulk Bags.html">Leno Netzsäcke</a></li>
+                      <li><a href="Container Page.html">Containers</a></li>
+                   </ul>
+                  </div>
+               </li>
+          
+            <li><a href="#">
+                Broschüren</a></li>
+            <li><a href="contact us.html">Kontaktiere uns</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav>
+    </div>
+
+    
+</header>
+
+<!-- header section ends -->
+
+<!-- bottom navbar  -->
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#about" class="fas fa-list"></a>
+    <a href="#services" class="fas fa-list"></a>
+    <a href="#shop" class="fas fa-comments"></a>
+    <a href="#contact" class="fas fa-blog"></a>
+</nav>
+
+<!-- login form  -->
+
+<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="">
+        <h3>Anmelden</h3>
+        <span>Benutzername</span>
+        <input type="email" name="" class="box" placeholder="eben Sie Ihre E-Mail ein" id="">
+        <span>Passwort </span>
+        <input type="password" name="" class="box" placeholder="Geben Sie Ihr Passwort ein" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">erinnere dich an mich</label>
+        </div>
+        <input type="submit" value="Anmelden" class="btn">
+        <p>Passwort vergessen ? <a href="#">Klicken Sie hier</a></p>
+        <p>Sie Haben Noch Kein Konto? <a href="#">Erstellen Sie Eins </a></p>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+
+<section class="home" id="home">
+
+    <div class="row">
+        
+        <div class="Hcard">
+        <div class="content">
+        <h3>RECYCLING INDUSTRIE-BIG BAGS </h3>
+                
+                 
+            <p>
+				Ihr Verpackungspartner, der sich Verpflichtet hat, Ihnen das Beste zu liefern.
+				
+				
+			</p>
+            <a href="Industries.html" class="btn">Erfahren Sie mehr</a>
+        </div>
+        </div>
+     </div>   
+
+</section>
+
+<!-- home section end -->
+
+
+<section class="deal">
+
+    <div class="content">
+       
+        <h1>RECYCLINGINDUSTRIE</h1>
+		<h3>
+			Flexibel, Stark Und Kostengünstig</h3>
+        <p>Mit Conbag International Packaging GmbH & Co. KG an Ihrer Seite werden Transport und Lagerung alle Ihrer Recyclingprodukte zum Kinderspiel. Wir bieten eine breite Produktpalette, die den Transport und die Lagerung von Recyclingprodukte kosten- und zeiteffizient erleichtert. Aufgrund Ihrer Vielseitigkeit werden Big Bags häufig im gesamten Recyclingsektor verwendet. Sie können zum Transport von Recyclingmaterial in seiner ursprünglichen Form oder nach der Wiederaufbereitung verwendet werden.</p>
+			 <a href="about.html" class="btn">	mehr über uns</a>
+    </div>
+</section>
+
+<!-- deal section starts  -->
+
+<section class="deal">
+
+    <div class="image">
+        <img src="img/rec3.webp" alt="">
+    </div>
+    <div class="content">
+	
+        <h3>	WIR ERFÜLLEN REGELMÄßIG DIE ANFORDERUNGEN DER GROßPACKUNG:</h3>
+        
+        <p>• Haushaltsrecycling
+			<br> • Grünabfälle
+			<br> • Nichteisenmetalle
+			<br> • Kunststoffe
+			<br> • Papier und Pappe
+			<br> • Gummi
+			<br> • Textilien und vieles Mehr
+		
+			</p>
+        <a href="rindustry.html" class="btn">mehr lesen</a>
+    </div>
+
+   
+</section>
+
+<!-- deal section ends -->
+
+<!-- deal section starts  -->
+
+<section class="deal">
+
+   
+    <div class="content">
+        <h3>PRODUKTAUSWAHL:</h3>
+       
+        <p>
+			• unbeschichtetes Gewebe Von 110 gsm Bis 245 gsm (Gramm Pro Quadratmeter).
+			<br> • beschichtetes Gewebe.
+			<br> • aus farbigem Gewebe.
+			<br> • U+2- oder kreisförmiges Design.
+			<br> • mit verschiedenen oberen Befestigungen, Z. B. Schürzen- Oder Füll Top.
+			<br> • mit Auslaufstutzen an der Basis.
+			<br> • UN-zugelassene FIBCs.
+			</p>
+			<a href="rindustry.html" class="btn">mehr lesen</a>
+    </div>
+
+    <div class="image">
+        <img src="image/Waste Management.jpg" alt="">
+    </div>
+</section>
+
+<!-- deal section ends -->
+
+<!-- newsletter section starts -->
+
+<section class="newsletter">
+
+    <form action="">
+        <h3>Abonnieren Sie die neuesten Updates</h3>
+        <input type="email" name="" placeholder="enter your email" id="" class="box">
+        <input type="submit" value="subscribe" class="btn">
+        
+        <!--featured section ends-->
+    </form>
+
+</section>
+
+<!-- newsletter section ends -->
+
+ <!-- reviews section starts  -->
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading"> <span>Einrichtungen und Partnerschaften</span> </h1>
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+            <div class="card">
+                <i class="fas fa-hotel"></i>
+                <div class="card-body">
+                <h3>Herstellung</h3>
+                <p>Conbag International Packaging nutzt mehrere Produktionsstätten in Indien, die jeweils über ein gültiges Zertifikat für die Herstellung von Big Bags vom Indian Institute of Packaging, Cotecna in Indien, Labordata
+                     in Deutschland und mehreren anderen international anerkannten Prüfzentren verfügen.</p>
+               
+            </div>
+
+            </div>
+        </div>
+
+            <div class="swiper-slide box">
+                <div class="card">
+                    <i class="fas fa-cubes"></i>
+                    <div class="card-body">
+                <h3>Vertrieb und Lieferung</h3>
+                <p>Conbag International Packaging ist von Büros in Frankfurt, Deutschland, und Indore, Indien, 
+                    aus tätig und vertreibt über Lagerstätten in Dietzhölztal, Deutschland. Cotecna in Indien, Labordata
+                    in Deutschland und mehreren anderen international anerkannten Prüfzentren verfügen Big Bags vom of Packaging</p>
+                </div>
+
+            </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="card">
+                    <i class="fas fa-handshake"></i>
+                    <div class="card-body">
+                <h3>Verbundene Partnerfirma</h3>
+                <p>Conbag International Packaging arbeitet eng mit seinen Spediteuren zusammen, um einen hervorragenden Lieferservice aufrechtzuerhalten, 
+                    der es uns ermöglicht, weltweit Lieferungen anzubieten,Big Bags vom of Packaging</p>
+				
+                </div>
+
+            </div>
+            </div>
+			</div>
+			</div>
+		
+            
+    
+</section>
+
+
+
+<!-- reviews section ends -->
+
+<!-- deal section starts  -->
+
+<section class="deal">
+
+    <div class="content">
+        <h2>Conbags International Packaging kann das für Sie tun........</h2>
+        
+        <p>• Kontinuierlich ein vollständig zertifiziertes Qualitätsprodukt liefern.
+			<br> • Bieten Sie einen wettbewerbsfähigen Preis.
+			<br> • Bieten Sie ein vollständiges Bestandsverwaltungssystem an.
+			<br> • Lagern Sie bis zu 6 Monate Ihres benötigten Lagerbestands in unseren Lagern.
+			<br> • Weisen Sie Ihrem Unternehmen einen Account Manager zu, der jederzeit per Telefon, E-Mail oder per E-Mail erreichbar ist.
+			<br> • Bieten Sie exzellenten Service.</p>
+        <a href="index.html" class="btn">mehr lesen</a>
+    </div>
+
+    <div class="image">
+        <img src="img/indus 1.jpg" alt="">
+    </div>
+
+</section>
+
+<!-- deal section ends -->
+
+
+<section class="deal">
+
+    <div class="content">
+      <div class="image">
+        <img src="img/Conbag signature.png" alt="">
+    </div>
+     
+    </div>
+    </section>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+	<div class="box-container">
+  
+		<div class="box">
+		  <a href="index.html" class="logo"><img src="images/conbag-header.png" alt=""; height="90"; width="280"></a>
+			<a href="#"> <i class="fas fa-map-marker-alt"></i>  Hauptstrasse 79, 35716 Dietzhölztal, Germany, Germany  </a>
+		<a href="#"> <i class="fas fa-clock"></i>14.	Working : Mon-Thursday (8:00-16:30) Fri (08:00- 15:00) - Arbeitszeiten : 
+		  Montag- Donnerstag ( 08:00 - 16:30 ) Freitag (08:00 - 15:00) </a>
+		
+			
+		</div>
+  
+		<div class="box">
+			<h3>Über uns Us</h3>
+			<a href="index.html"> <i class="fas fa-arrow-right"></i>Startseite</a>
+			<a href="about.html"> <i class="fas fa-arrow-right"></i>Über uns</a>
+			<a href="SERVICES (2).html"> <i class="fas fa-arrow-right"></i>Leistungen</a>
+			<a href="contact us.html"> <i class="fas fa-arrow-right"></i>Kontakt</a>
+		</div>
+  
+		<div class="box">
+			<h3>Unternehmen</h3>
+		   
+			<a href="#"> <i class="fas fa-arrow-right"></i>Daten¬schutz¬erklärung</a>
+			<a href="#"> <i class="fas fa-arrow-right"></i>Cookie- richtlinie</a>
+			<a href="#"> <i class="fas fa-arrow-right"></i>Brochüren</a>
+		   
+			<a href="https://www.conbag.de/faq/"> <i class="fas fa-arrow-right"></i> FAQ's </a>
+   
+  
+  </div>
+  <div class="box">
+			<h3>Kontaktiere Uns</h3>
+			<a href="contact us.html"> <i class="fas fa-phone"></i> Tel: +49(0)2774-92424-0</a>
+	  
+			<a href="contact us.html"> <i class="fas fa-envelope"></i> Email:   info@conbag.de</a>
+	  <a href="contact us.html">  Registernummer :  HRA 7771</a>
+			
+		
+	</div>
+  
+  
+	<div class="share">
+		   <a href="https://www.linkedin.com/company/69201484/admin/feed/posts/" class="fab fa-linkedin"></a>
+		<a href="https://www.facebook.com/ConbagBulkPackagingLtd/" class="fab fa-facebook-f"></a>
+		<a href="https://twitter.com/RdaLtd" class="fab fa-twitter"></a>
+		<a href="https://www.instagram.com/rdabulkpackaging/?next=%2F" class="fab fa-instagram"></a>
+  
+	 
+	</div>
+  </div>
+	<div class="credit"> Created by <span>  Erstellt von 2025 Conbag International Packaging GmbH & Co. aus Deutschland </span>| alle Rechte vorbehalten!</div>
+  
+  </section>
+  
+  <!-- footer section ends -->
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="main.js/script.js"></script>
+
+</body>
+</html>
