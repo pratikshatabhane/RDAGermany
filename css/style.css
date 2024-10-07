@@ -1533,6 +1533,8 @@ nav{
 
 .reviews .card{
     box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    height: 410px;
+    width: 400px;
     border: none;
     cursor: pointer;
 }
