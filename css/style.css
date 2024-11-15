@@ -1502,7 +1502,7 @@ nav{
 
 .reviews .reviews-slider .box{
     border:var(--border);
-    padding:2rem;
+    padding: 3 rem;
     text-align: center;
     margin:2rem 0;
 }
