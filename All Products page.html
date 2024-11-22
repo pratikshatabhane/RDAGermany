@@ -264,28 +264,25 @@
       font-size: 18px;
     }
     .mega-box{
-      position: static;
-      top: 65px;
-      opacity: 1;
-      visibility: visible;
-      padding: 0 20px;
-      max-height: 0px;
-      overflow: hidden;
-      transition: all 0.3s ease;
-    }
-    .mega-box .content{
-      box-shadow: none;
-      flex-direction: column;
-      padding: 20px 20px 0 20px;
-    }
-    .mega-box .content .row{
-      width: 100%;
-      margin-bottom: 15px;
-      border-top: 1px solid rgba(255,255,255,0.08);
-    }
-    .mega-box .content .row:nth-child(1),
-    .mega-box .content .row:nth-child(2){
-      border-top: 0px;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			padding: 0 30px;
+			top: 85px;
+			opacity: 0;
+			visibility: hidden;
+		  }
+		  .mega-box .content{
+			background: #242526cd;
+			padding: 25px 20px;
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+		  }
+		  .mega-box .content .row{
+			width: calc(25% - 30px);
+			line-height: 45px;
     }
     .content .row .mega-links{
       border-left: 0px;
@@ -797,7 +794,7 @@ html{
                           <li><a href="Folien, Beutel und Säcke.html">Folien, Beutel und Säcke</a></li>
                           <li><a href="top hemmed bulk bags.html">Flachsäcke</a></li>
                        
-                        <li><a href="https://www.conbag.de/verpackungsmaterial/">Mehr…</a></li>
+                        <li><a href="https://www.conbag.de/verpackungsmaterial/">Mehr....</a></li>
                      </ul>
                     </div>
                </li>
